@@ -42,7 +42,7 @@ function HeroSection() {
   const { t } = useTranslation()
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden">
       {/* Background with gradient overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center"

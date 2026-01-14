@@ -3,6 +3,11 @@
     "title": "Le Salon du Leudal | Café Houben - Depuis 1890",
     "description": "Vivez l'hospitalité et la convivialité limbourgeoise dans une atmosphère chaleureuse. Hôtel, restaurant, café et lieu d'événements à Nunhem depuis 1890."
   },
+  "notFound": {
+    "title": "Page Non Trouvée",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée. Ne vous inquiétez pas, vous pouvez toujours retourner à notre page d'accueil.",
+    "backHome": "Retour à l'Accueil"
+  },
   "nav": {
     "home": "Accueil",
     "about": "À propos",

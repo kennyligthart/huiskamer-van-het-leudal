@@ -3,6 +3,11 @@
     "title": "Das Wohnzimmer des Leudal | Café Houben - Seit 1890",
     "description": "Erleben Sie Limburgische Gastfreundschaft und Gemütlichkeit in heimeliger Atmosphäre. Hotel, Restaurant, Café und Veranstaltungsort in Nunhem seit 1890."
   },
+  "notFound": {
+    "title": "Seite Nicht Gefunden",
+    "description": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben. Keine Sorge, Sie können jederzeit zu unserer Startseite zurückkehren.",
+    "backHome": "Zurück zur Startseite"
+  },
   "nav": {
     "home": "Startseite",
     "about": "Über uns",

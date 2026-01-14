@@ -3,6 +3,11 @@
     "title": "The Living Room of Leudal | Café Houben - Since 1890",
     "description": "Experience Limburgian hospitality and coziness in a homely atmosphere. Hotel, restaurant, café and event venue in Nunhem since 1890."
   },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or has been moved. Don't worry, you can always return to our homepage.",
+    "backHome": "Back to Home"
+  },
   "nav": {
     "home": "Home",
     "about": "About Us",

@@ -10,5 +10,6 @@
       "Bash(npm run dev:*)",
       "Skill(fix)"
     ]
-  }
+  },
+  "outputStyle": "Explanatory"
 }

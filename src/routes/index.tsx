@@ -1,24 +1,33 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
+import { SectionDivider } from '~/components/SectionDivider'
 
 export const Route = createFileRoute('/')({
   component: HomePage,
 })
+
+// Change this to test different divider styles:
+// 'wave' | 'angle' | 'ornament' | 'overlap' | 'gradient' | 'arc' | 'zigzag' | 'dots' | 'brush' | 'peaks' | 'scallop' | 'artdeco' | 'vine' | 'doubleline' | 'torn'
+const DIVIDER_VARIANT = 'vine' as const
 
 function HomePage() {
   return (
     <div className="bg-light overflow-hidden">
       {/* Hero Section */}
       <HeroSection />
+      <SectionDivider from="dark" to="light" variant={DIVIDER_VARIANT} />
 
       {/* Welcome Section */}
       <WelcomeSection />
+      <SectionDivider from="light" to="dark" variant={DIVIDER_VARIANT} />
 
       {/* Services Section */}
       <ServicesSection />
+      <SectionDivider from="dark" to="light" variant={DIVIDER_VARIANT} />
 
       {/* Why Choose Us */}
       <WhyChooseUsSection />
+      <SectionDivider from="light" to="dark" variant={DIVIDER_VARIANT} />
 
       {/* Call to Action */}
       <CTASection />

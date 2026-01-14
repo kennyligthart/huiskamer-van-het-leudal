@@ -9,6 +9,7 @@ dist/
 
 # TanStack
 .tanstack/
+src/routeTree.gen.ts
 
 # Environment files
 .env

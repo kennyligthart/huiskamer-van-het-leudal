@@ -46,14 +46,13 @@ function ContactPage() {
 
         <div className="container-custom relative text-center">
           <span className="text-primary text-sm tracking-[0.3em] uppercase mb-4 block">
-            Neem Contact Op
+            {t('contact.sectionLabel')}
           </span>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-light mb-6">
             {t('contact.title')}
           </h1>
           <p className="text-light/70 max-w-2xl mx-auto">
-            Heeft u vragen, wilt u reserveren of meer informatie?
-            Wij helpen u graag verder.
+            {t('contact.heroDescription')}
           </p>
         </div>
       </section>
@@ -67,12 +66,12 @@ function ContactPage() {
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-px bg-primary" />
                 <span className="text-primary text-sm tracking-[0.3em] uppercase">
-                  Contactgegevens
+                  {t('contact.info.sectionLabel')}
                 </span>
               </div>
 
               <h2 className="font-serif text-3xl md:text-4xl text-dark mb-8">
-                Wij Staan Voor U Klaar
+                {t('contact.info.title')}
               </h2>
 
               <div className="space-y-6 mb-10">
@@ -100,7 +99,7 @@ function ContactPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-serif text-lg text-dark mb-1">Telefoon</h3>
+                    <h3 className="font-serif text-lg text-dark mb-1">{t('contact.info.phone')}</h3>
                     <a href="tel:+31475591234" className="text-dark/70 hover:text-primary transition-colors">
                       +31 (0)475 59 12 34
                     </a>
@@ -114,7 +113,7 @@ function ContactPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-serif text-lg text-dark mb-1">E-mail</h3>
+                    <h3 className="font-serif text-lg text-dark mb-1">{t('contact.info.email')}</h3>
                     <a href="mailto:info@dehuiskamervanhetleudal.com" className="text-dark/70 hover:text-primary transition-colors">
                       info@dehuiskamervanhetleudal.com
                     </a>
@@ -140,11 +139,11 @@ function ContactPage() {
 
             {/* Contact Form */}
             <div className="bg-white p-8 md:p-10 shadow-lg">
-              <h3 className="font-serif text-2xl text-dark mb-6">Stuur ons een bericht</h3>
+              <h3 className="font-serif text-2xl text-dark mb-6">{t('contact.form.title')}</h3>
 
               {status === 'success' ? (
                 <div className="p-6 bg-green-50 border border-green-200 text-green-800 rounded">
-                  <p className="font-medium mb-1">Bedankt voor uw bericht!</p>
+                  <p className="font-medium mb-1">{t('contact.form.thankYou')}</p>
                   <p className="text-sm">{t('contact.form.success')}</p>
                 </div>
               ) : (
@@ -202,12 +201,12 @@ function ContactPage() {
                         onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                         className="w-full px-4 py-3 border border-dark/20 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors bg-white"
                       >
-                        <option value="">Selecteer onderwerp</option>
-                        <option value="hotel">Hotel reservering</option>
-                        <option value="restaurant">Restaurant reservering</option>
-                        <option value="events">Evenementen / Feesten</option>
-                        <option value="catering">Catering</option>
-                        <option value="other">Overig</option>
+                        <option value="">{t('contact.form.subjects.select')}</option>
+                        <option value="hotel">{t('contact.form.subjects.hotel')}</option>
+                        <option value="restaurant">{t('contact.form.subjects.restaurant')}</option>
+                        <option value="events">{t('contact.form.subjects.events')}</option>
+                        <option value="catering">{t('contact.form.subjects.catering')}</option>
+                        <option value="other">{t('contact.form.subjects.other')}</option>
                       </select>
                     </div>
                   </div>
@@ -231,7 +230,7 @@ function ContactPage() {
                     disabled={status === 'sending'}
                     className="w-full bg-primary text-dark font-medium py-4 hover:bg-primary-600 transition-colors disabled:opacity-50"
                   >
-                    {status === 'sending' ? 'Verzenden...' : t('contact.form.send')}
+                    {status === 'sending' ? t('contact.form.sending') : t('contact.form.send')}
                   </button>
                 </form>
               )}

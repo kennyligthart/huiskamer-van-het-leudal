@@ -1,4 +1,13 @@
 {
+  "meta": {
+    "title": "The Living Room of Leudal | Café Houben - Since 1890",
+    "description": "Experience Limburgian hospitality and coziness in a homely atmosphere. Hotel, restaurant, café and event venue in Nunhem since 1890."
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or has been moved. Don't worry, you can always return to our homepage.",
+    "backHome": "Back to Home"
+  },
   "nav": {
     "home": "Home",
     "about": "About Us",
@@ -20,15 +29,27 @@
   "home": {
     "hero": {
       "title": "The Living Room of Leudal",
+      "titlePart1": "The Living Room",
+      "titlePart2": "of Leudal",
       "subtitle": "Experience Limburgian hospitality and coziness in a homely atmosphere",
       "since": "Since 1890"
     },
     "welcome": {
+      "sectionLabel": "Welcome",
       "title": "Welcome to Café Houben",
-      "description": "Since 1890, our family business has been the address for Limburgian hospitality. Whether you come for an overnight stay in our hotel, a delicious dinner in our restaurant, a cozy evening in our café, or a special occasion in our event spaces – you are always welcome."
+      "description": "Since 1890, our family business has been the address for Limburgian hospitality. Whether you come for an overnight stay in our hotel, a delicious dinner in our restaurant, a cozy evening in our café, or a special occasion in our event spaces – you are always welcome.",
+      "yearsExperience": "Years of experience",
+      "features": {
+        "hotel": "Comfortable Hotel",
+        "restaurant": "Delicious Restaurant",
+        "cafe": "Cozy Café",
+        "events": "Event Venue"
+      }
     },
     "services": {
+      "sectionLabel": "Discover",
       "title": "Our Services",
+      "subtitle": "Four generations of hospitality under one roof",
       "hotel": {
         "title": "Hotel",
         "description": "Comfortable rooms for a relaxing stay"
@@ -45,6 +66,286 @@
         "title": "Events",
         "description": "The perfect location for your celebration or meeting"
       }
+    },
+    "whyChooseUs": {
+      "sectionLabel": "Why Choose",
+      "title": "What Makes Us Special",
+      "items": {
+        "tradition": {
+          "title": "Family Tradition",
+          "description": "For more than 130 years, our hospitality has been passed down from generation to generation."
+        },
+        "cuisine": {
+          "title": "Limburgian Cuisine",
+          "description": "Authentic dishes prepared with fresh, local ingredients and love for the craft."
+        },
+        "location": {
+          "title": "Unique Location",
+          "description": "Located in the heart of Leudal, surrounded by beautiful Limburgian nature."
+        },
+        "service": {
+          "title": "Personal Attention",
+          "description": "With us, you're not just a number. We ensure a warm welcome and personal service."
+        }
+      }
+    },
+    "cta": {
+      "title": "Experience Limburgian",
+      "titleHighlight": "Hospitality",
+      "description": "We look forward to welcoming you. Contact us for reservations, questions or to learn more about our services.",
+      "button": "Contact Us"
+    }
+  },
+  "hotel": {
+    "sectionLabel": "Stay",
+    "heroDescription": "Relax in our comfortable rooms and enjoy Limburgian hospitality",
+    "intro": {
+      "sectionLabel": "Our Hotel",
+      "title": "A Home Away From Home",
+      "description1": "Our hotel offers you the perfect base to explore the beautiful surroundings of Leudal. After a day full of activities or business, you can relax in one of our comfortable rooms.",
+      "description2": "All rooms are equipped with modern amenities and furnished with attention to detail. In the morning, you'll be treated to an extensive breakfast prepared with fresh, local products.",
+      "features": {
+        "wifi": "Free WiFi",
+        "breakfast": "Breakfast included",
+        "parking": "Parking"
+      }
+    },
+    "facilities": {
+      "sectionLabel": "Amenities",
+      "title": "Everything For Your Comfort",
+      "items": {
+        "beds": {
+          "title": "Comfortable Beds",
+          "description": "Sleep well on quality beds"
+        },
+        "bathroom": {
+          "title": "Private Bathroom",
+          "description": "With shower and toiletries"
+        },
+        "tv": {
+          "title": "Flatscreen TV",
+          "description": "With various channels"
+        },
+        "coffee": {
+          "title": "Coffee & Tea",
+          "description": "Free in your room"
+        }
+      }
+    },
+    "cta": {
+      "title": "Interested in a Stay?",
+      "description": "Contact us for availability and rates. We're happy to help you plan your stay.",
+      "button": "Contact Us"
+    }
+  },
+  "restaurant": {
+    "sectionLabel": "Culinary Enjoyment",
+    "heroDescription": "Taste the authentic flavors of Limburg in an atmospheric ambiance",
+    "intro": {
+      "sectionLabel": "Our Restaurant",
+      "title": "Limburgian Cuisine Prepared with Passion",
+      "description1": "In our restaurant, we serve honest, tasty dishes prepared with fresh, local ingredients. Our kitchen combines traditional Limburgian recipes with a modern touch.",
+      "description2": "Whether you come for an extensive lunch, a romantic dinner, or a festive meal - our chef and his team guarantee a culinary experience to remember.",
+      "reserveButton": "Reserve a table"
+    },
+    "specialties": {
+      "sectionLabel": "Our Specialties",
+      "title": "Taste Limburg",
+      "items": {
+        "seasonal": {
+          "title": "Seasonal Dishes",
+          "description": "Our menu changes with the seasons, so you can always enjoy the freshest ingredients."
+        },
+        "local": {
+          "title": "Local Products",
+          "description": "We work with local farmers and suppliers for the best quality."
+        },
+        "desserts": {
+          "title": "Homemade Desserts",
+          "description": "End your meal with one of our delicious homemade desserts."
+        }
+      }
+    },
+    "cta": {
+      "title": "Reserve Your Table",
+      "description": "We recommend making a reservation in advance, so we can guarantee you the best seat.",
+      "button": "Reserve"
+    }
+  },
+  "cafe": {
+    "sectionLabel": "Coziness",
+    "heroDescription": "The heart of Nunhem - for a snack, a drink, or just good company",
+    "intro": {
+      "sectionLabel": "Our Café",
+      "title": "True Limburgian Coziness",
+      "description1": "Our café is the place where villagers and visitors come together. For a cup of coffee, a refreshing beer, or a tasty snack - everyone is welcome.",
+      "description2": "We have carefully preserved the authentic atmosphere of yesteryear. At the bar or at a cozy table - here you immediately feel at home.",
+      "features": {
+        "coffee": "Fresh coffee & tea",
+        "beer": "Local beers",
+        "menu": "Light menu",
+        "atmosphere": "Homely atmosphere"
+      }
+    },
+    "menu": {
+      "sectionLabel": "Light Menu",
+      "title": "Something Delicious?",
+      "items": {
+        "sandwiches": {
+          "title": "Sandwiches",
+          "description": "Freshly made"
+        },
+        "snacks": {
+          "title": "Snacks",
+          "description": "Classic & delicious"
+        },
+        "salads": {
+          "title": "Salads",
+          "description": "Fresh & healthy"
+        },
+        "pastry": {
+          "title": "Pastry",
+          "description": "Homemade"
+        }
+      }
+    },
+    "cta": {
+      "title": "See You Soon at Our Café!",
+      "description": "Feel free to drop by for a pleasant moment. For groups, we recommend calling ahead.",
+      "button": "Contact Us"
+    }
+  },
+  "about": {
+    "sectionLabel": "Since 1890",
+    "history": {
+      "sectionLabel": "Our History",
+      "title": "A Family Tradition of More Than 130 Years",
+      "description1": "Since 1890, Café Houben has been the heart of Nunhem. What started as a simple village café with a grocery store has grown into a versatile hospitality business where hospitality is central.",
+      "description2": "For four generations, our family has opened its doors to guests from near and far. We try to pass on the warmth and personal character that our great-grandparents radiated every day.",
+      "description3": "Today, we offer you a complete package: from a comfortable hotel room to a delicious dinner, from a cozy drink in our café to the perfect location for your party or meeting.",
+      "founded": "Founded"
+    },
+    "values": {
+      "sectionLabel": "Our Values",
+      "title": "What We Stand For",
+      "items": {
+        "hospitality": {
+          "title": "Hospitality",
+          "description": "With us, you feel at home. We welcome every guest with a warm smile and personal attention."
+        },
+        "quality": {
+          "title": "Quality",
+          "description": "From fresh ingredients to a perfectly made bed - we strive for excellence in everything we do."
+        },
+        "tradition": {
+          "title": "Tradition",
+          "description": "With respect for the past, we build for the future. Our recipes and customs are passed down from generation to generation."
+        }
+      }
+    },
+    "location": {
+      "sectionLabel": "Our Location",
+      "title": "In the Heart of Leudal",
+      "description": "Located on Kerkstraat in picturesque Nunhem, surrounded by the beautiful nature of Leudal."
+    }
+  },
+  "scooterRental": {
+    "sectionLabel": "Explore the Area",
+    "heroDescription": "Explore the beautiful Leudal and surroundings on a comfortable scooter",
+    "intro": {
+      "sectionLabel": "Scooter Rental",
+      "title": "Discover Limburg on Two Wheels",
+      "description1": "Leudal and its surroundings offer beautiful routes through forests, past castles, and through picturesque villages. On a scooter, you experience all this in a relaxed and enjoyable way.",
+      "description2": "Our scooters are easy to operate and suitable for anyone with a B driver's license. We provide a short instruction and you can set off immediately!",
+      "features": {
+        "helmet": "Including helmet and instruction",
+        "routes": "Route suggestions available",
+        "duration": "Full day and half day rental available"
+      }
+    },
+    "info": {
+      "sectionLabel": "Practical Info",
+      "title": "What You Need to Know",
+      "requirements": {
+        "title": "Requirements",
+        "age": "Minimum age: 18 years",
+        "license": "Valid B driver's license",
+        "id": "ID required",
+        "deposit": "Deposit required"
+      },
+      "times": {
+        "title": "Rental Times",
+        "halfDay": "Half day: 4 hours",
+        "fullDay": "Full day: 8 hours",
+        "weekend": "Weekend packages",
+        "reservation": "By reservation"
+      },
+      "routes": {
+        "title": "Routes",
+        "leudal": "Leudal route",
+        "castles": "Castle tour",
+        "maas": "Maas route",
+        "custom": "Custom route possible"
+      }
+    },
+    "cta": {
+      "title": "Reserve Your Scooter",
+      "description": "Contact us for availability and rates. We recommend booking in advance, especially during high season.",
+      "button": "Contact Us"
+    }
+  },
+  "eventsPage": {
+    "sectionLabel": "Your Special Occasion",
+    "heroDescription": "The perfect location for any event, large or small",
+    "intro": {
+      "sectionLabel": "Our Venues",
+      "title": "The Right Space for Every Moment",
+      "description": "From intimate gatherings to large parties, from business meetings to emotional moments - our diverse spaces offer the perfect setting for every event."
+    },
+    "types": {
+      "garden": "Enjoy our atmospheric inner garden for your special occasion.",
+      "catering": "Let your event be catered by our experienced catering service.",
+      "partyHall": "Our party hall offers space for larger celebrations and parties.",
+      "meetingRoom": "A professional environment for your business meetings.",
+      "wedding": "Make your wedding day an unforgettable event.",
+      "funeral": "A dignified location for farewell and remembrance."
+    },
+    "cta": {
+      "title": "Let Us Take Care of Your Event",
+      "description": "Contact us without obligation to discuss the possibilities. Together we'll make your event a success.",
+      "button": "Contact Us"
+    }
+  },
+  "contact": {
+    "sectionLabel": "Get in Touch",
+    "heroDescription": "Do you have questions, want to make a reservation, or need more information? We're happy to help.",
+    "title": "Contact",
+    "info": {
+      "sectionLabel": "Contact Details",
+      "title": "We're Here for You",
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "form": {
+      "title": "Send us a message",
+      "thankYou": "Thank you for your message!",
+      "name": "Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send",
+      "sending": "Sending...",
+      "success": "Your message has been sent. We will contact you as soon as possible.",
+      "error": "Something went wrong. Please try again later.",
+      "subjects": {
+        "select": "Select subject",
+        "hotel": "Hotel reservation",
+        "restaurant": "Restaurant reservation",
+        "events": "Events / Parties",
+        "catering": "Catering",
+        "other": "Other"
+      }
     }
   },
   "footer": {
@@ -55,23 +356,158 @@
     "sundayClosed": "Sunday closed",
     "rights": "All rights reserved"
   },
-  "contact": {
-    "title": "Contact",
-    "form": {
-      "name": "Name",
-      "email": "Email Address",
-      "phone": "Phone Number",
-      "subject": "Subject",
-      "message": "Message",
-      "send": "Send",
-      "success": "Your message has been sent. We will contact you as soon as possible.",
-      "error": "Something went wrong. Please try again later."
-    }
-  },
   "common": {
     "readMore": "Read More",
     "bookNow": "Book Now",
     "viewMenu": "View Menu",
-    "learnMore": "Learn More"
+    "learnMore": "Learn More",
+    "photoComingSoon": "Photo coming soon",
+    "backToEvents": "← Back to Events",
+    "requestInfo": "Request Information",
+    "scheduleConsultation": "Schedule a Consultation",
+    "contactUs": "Contact Us"
+  },
+  "weddingPage": {
+    "heroSubtitle": "Make your wedding day an unforgettable moment",
+    "sectionLabel": "Weddings",
+    "title": "Your Dream Wedding Starts Here",
+    "description1": "Your wedding day is one of the most important days of your life. We ensure everything is perfect, so you and your guests can enjoy this special day carefree.",
+    "description2": "From an intimate ceremony to a grand celebration - we have the experience and facilities to make your wishes come true. Together we'll create a program that suits you.",
+    "features": {
+      "reception": "Reception and dinner",
+      "partyHall": "Party hall for the evening party",
+      "garden": "Inner garden for photos",
+      "accommodation": "Overnight stay for the bride and groom"
+    },
+    "services": {
+      "sectionLabel": "What We Offer",
+      "title": "Everything For Your Big Day",
+      "items": {
+        "reception": {
+          "title": "Reception",
+          "description": "Welcome for your guests"
+        },
+        "dinner": {
+          "title": "Dinner",
+          "description": "Culinary highlight"
+        },
+        "party": {
+          "title": "Party",
+          "description": "Dancing into the night"
+        },
+        "stay": {
+          "title": "Stay",
+          "description": "Romantic overnight"
+        }
+      }
+    }
+  },
+  "funeralPage": {
+    "heroSubtitle": "A dignified place for farewell and remembrance",
+    "sectionLabel": "Coffee Table",
+    "title": "Remembering Together in a Warm Environment",
+    "description1": "Saying goodbye to a loved one is an emotional moment. We offer a peaceful environment where family and friends can come together to remember and share memories.",
+    "description2": "Our experienced staff ensure a dignified reception with respect and discretion. You can fully focus on being together with your loved ones.",
+    "services": {
+      "coffee": {
+        "title": "Coffee & Tea",
+        "description": "Unlimited coffee, tea and soft drinks"
+      },
+      "coffeeTable": {
+        "title": "Coffee Table",
+        "description": "Traditional coffee table with sandwiches"
+      },
+      "warmMeal": {
+        "title": "Warm Meal",
+        "description": "Option for a warm meal"
+      },
+      "flexibleRoom": {
+        "title": "Flexible Space",
+        "description": "Adapted to your group"
+      }
+    },
+    "closingText": "We understand this is a difficult time. Please feel free to contact us to discuss the possibilities. We're happy to think along with you."
+  },
+  "gardenPage": {
+    "heroSubtitle": "An oasis of tranquility for your special moments",
+    "sectionLabel": "Inner Garden",
+    "title": "A Green Oasis in the Heart of Nunhem",
+    "description1": "Our beautiful inner garden offers a unique setting for your event. Surrounded by greenery and sheltered from the wind, this is the perfect location for a summer reception, drinks or dinner.",
+    "description2": "The garden can be used both during the day and in the evening, with atmospheric lighting after dark. Ideal for both formal and informal occasions.",
+    "features": {
+      "capacity": "Suitable for 20-60 people",
+      "lighting": "Atmospheric lighting",
+      "catering": "Catering available"
+    }
+  },
+  "partyHallPage": {
+    "heroSubtitle": "The ideal space for your party or celebration",
+    "sectionLabel": "Party Hall",
+    "title": "Space for Larger Celebrations",
+    "description1": "Our party hall is the perfect location for birthdays, anniversaries, communions and other festive occasions. The hall offers space for larger groups.",
+    "description2": "We take care of everything for you: from atmospheric decoration to delicious catering. You don't have to worry about anything and can fully enjoy your party.",
+    "features": {
+      "capacity": "Capacity up to 100 people",
+      "bar": "Private bar",
+      "sound": "Sound system available",
+      "parking": "Ample parking"
+    }
+  },
+  "meetingRoomPage": {
+    "heroSubtitle": "An inspiring environment for your business meeting",
+    "sectionLabel": "Meeting Room",
+    "title": "Meeting in a Unique Setting",
+    "description1": "Are you looking for an inspiring location for your meeting, training or workshop? Our meeting room offers all the facilities you need, in a peaceful environment.",
+    "description2": "Far from the daily office environment, your participants can fully focus. Of course, we provide catering, from coffee and tea to a complete lunch.",
+    "features": {
+      "capacity": "Suitable for 10-30 people",
+      "equipment": "Projector and flipchart available",
+      "wifi": "Free WiFi",
+      "setup": "Various setups possible"
+    },
+    "packages": {
+      "sectionLabel": "Packages",
+      "title": "Meeting Packages",
+      "items": {
+        "halfDay": {
+          "title": "Half Day",
+          "description": "Morning or afternoon meeting including coffee/tea and lunch"
+        },
+        "fullDay": {
+          "title": "Full Day",
+          "description": "Full day including all drinks and lunch"
+        },
+        "custom": {
+          "title": "Custom",
+          "description": "Package tailored entirely to your wishes"
+        }
+      }
+    },
+    "requestQuote": "Request Quote"
+  },
+  "cateringPage": {
+    "heroSubtitle": "Culinary enjoyment at your own location",
+    "sectionLabel": "Catering",
+    "title": "We Come to You",
+    "description": "Do you have a party or event at another location? Our catering service brings the quality and taste of Café Houben to the location of your choice.",
+    "services": {
+      "appetizers": {
+        "title": "Appetizers & Buffets",
+        "description": "From snacks to extensive buffets"
+      },
+      "hotCold": {
+        "title": "Cold & Hot",
+        "description": "Both cold and hot dishes available"
+      },
+      "customMenu": {
+        "title": "Custom Menu",
+        "description": "We adapt to your wishes and dietary requirements"
+      },
+      "fullService": {
+        "title": "Full Service",
+        "description": "Including service and cleanup if desired"
+      }
+    },
+    "requestQuote": "Request Quote"
   }
 }

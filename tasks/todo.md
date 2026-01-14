@@ -2,8 +2,8 @@
 
 ## Phase 1: Project Setup
 - [x] Initialize TanStack Start project
-- [ ] Configure Convex backend
-- [ ] Set up Vercel deployment pipeline
+- [ ] Configure Convex backend *(paused - awaiting customer decision on contact form)*
+- [x] Set up Vercel deployment pipeline
 - [x] Configure Tailwind with custom theme (gold/dark colors)
 - [x] Set up i18n structure for 4 languages
 
@@ -59,5 +59,5 @@
 ## Phase 9: Final Integration
 - [ ] Contact form connected to Convex
 - [x] Language switching functionality
-- [ ] Final Vercel deployment
+- [x] Final Vercel deployment
 - [ ] Domain configuration

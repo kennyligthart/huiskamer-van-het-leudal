@@ -8,6 +8,12 @@ export const Route = createFileRoute('/over-ons')({
 function AboutPage() {
   const { t } = useTranslation()
 
+  const values = [
+    { icon: '🤝', key: 'hospitality' },
+    { icon: '⭐', key: 'quality' },
+    { icon: '🏛️', key: 'tradition' },
+  ]
+
   return (
     <div className="bg-light">
       {/* Hero Section */}
@@ -26,7 +32,7 @@ function AboutPage() {
 
         <div className="container-custom relative text-center">
           <span className="text-primary text-sm tracking-[0.3em] uppercase mb-4 block">
-            Sinds 1890
+            {t('about.sectionLabel')}
           </span>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-light mb-6">
             {t('nav.about')}
@@ -49,31 +55,25 @@ function AboutPage() {
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-px bg-primary" />
                 <span className="text-primary text-sm tracking-[0.3em] uppercase">
-                  Onze Geschiedenis
+                  {t('about.history.sectionLabel')}
                 </span>
               </div>
 
               <h2 className="font-serif text-3xl md:text-4xl text-dark mb-6">
-                Een Familietraditie van Meer dan 130 Jaar
+                {t('about.history.title')}
               </h2>
 
               <div className="w-20 h-1 bg-gradient-to-r from-primary to-primary/30 mb-8" />
 
               <div className="prose prose-lg text-dark/70">
                 <p className="mb-4">
-                  Al sinds 1890 is Café Houben het kloppend hart van Nunhem. Wat begon als een
-                  eenvoudig dorpscafé met kruidenierswinkel is uitgegroeid tot een veelzijdig
-                  horecabedrijf waar gastvrijheid centraal staat.
+                  {t('about.history.description1')}
                 </p>
                 <p className="mb-4">
-                  Vier generaties lang heeft onze familie de deuren geopend voor gasten van
-                  heinde en verre. De warmte en het persoonlijke karakter dat onze overgrootouders
-                  uitstraalden, proberen wij nog elke dag door te geven.
+                  {t('about.history.description2')}
                 </p>
                 <p>
-                  Vandaag de dag bieden wij u een compleet pakket: van een comfortabele
-                  hotelkamer tot een heerlijk diner, van een gezellige borrel in ons eetcafé
-                  tot de perfecte locatie voor uw feest of vergadering.
+                  {t('about.history.description3')}
                 </p>
               </div>
             </div>
@@ -87,7 +87,7 @@ function AboutPage() {
               />
               <div className="absolute -bottom-6 -left-6 bg-primary text-dark p-6">
                 <div className="text-4xl font-serif font-bold">1890</div>
-                <div className="text-xs tracking-wider uppercase">Opgericht</div>
+                <div className="text-xs tracking-wider uppercase">{t('about.history.founded')}</div>
               </div>
             </div>
           </div>
@@ -99,38 +99,26 @@ function AboutPage() {
         <div className="container-custom">
           <div className="text-center mb-16">
             <span className="text-primary text-sm tracking-[0.3em] uppercase mb-4 block">
-              Onze Waarden
+              {t('about.values.sectionLabel')}
             </span>
             <h2 className="font-serif text-3xl md:text-4xl text-light">
-              Waar Wij Voor Staan
+              {t('about.values.title')}
             </h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: 'Gastvrijheid',
-                description: 'Bij ons voelt u zich thuis. Wij ontvangen iedere gast met een warme glimlach en persoonlijke aandacht.',
-                icon: '🤝',
-              },
-              {
-                title: 'Kwaliteit',
-                description: 'Van verse ingrediënten tot een perfect opgemaakt bed - wij streven naar excellentie in alles wat we doen.',
-                icon: '⭐',
-              },
-              {
-                title: 'Traditie',
-                description: 'Met respect voor het verleden bouwen we aan de toekomst. Onze recepten en gebruiken worden van generatie op generatie doorgegeven.',
-                icon: '🏛️',
-              },
-            ].map((value, index) => (
+            {values.map((value, index) => (
               <div
                 key={index}
                 className="text-center p-8 border border-primary/20 hover:border-primary/40 transition-colors"
               >
                 <div className="text-5xl mb-6">{value.icon}</div>
-                <h3 className="font-serif text-xl text-light mb-4">{value.title}</h3>
-                <p className="text-light/60 leading-relaxed">{value.description}</p>
+                <h3 className="font-serif text-xl text-light mb-4">
+                  {t(`about.values.items.${value.key}.title`)}
+                </h3>
+                <p className="text-light/60 leading-relaxed">
+                  {t(`about.values.items.${value.key}.description`)}
+                </p>
               </div>
             ))}
           </div>
@@ -142,21 +130,20 @@ function AboutPage() {
         <div className="container-custom">
           <div className="text-center mb-12">
             <span className="text-primary text-sm tracking-[0.3em] uppercase mb-4 block">
-              Onze Locatie
+              {t('about.location.sectionLabel')}
             </span>
             <h2 className="font-serif text-3xl md:text-4xl text-dark mb-4">
-              In het Hart van het Leudal
+              {t('about.location.title')}
             </h2>
             <p className="text-dark/60 max-w-2xl mx-auto">
-              Gelegen aan de Kerkstraat in het pittoreske Nunhem, omgeven door de
-              prachtige natuur van het Leudal.
+              {t('about.location.description')}
             </p>
           </div>
 
           <div className="bg-dark-lighter p-8 md:p-12 text-center">
             <div className="grid md:grid-cols-3 gap-8">
               <div>
-                <div className="text-primary text-sm tracking-wider uppercase mb-2">Adres</div>
+                <div className="text-primary text-sm tracking-wider uppercase mb-2">{t('footer.address')}</div>
                 <address className="not-italic text-light/80">
                   Kerkstraat 17-19<br />
                   6083 AD Nunhem<br />
@@ -164,7 +151,7 @@ function AboutPage() {
                 </address>
               </div>
               <div>
-                <div className="text-primary text-sm tracking-wider uppercase mb-2">Contact</div>
+                <div className="text-primary text-sm tracking-wider uppercase mb-2">{t('footer.contact')}</div>
                 <div className="text-light/80">
                   <a href="tel:+31475591234" className="hover:text-primary transition-colors block">
                     +31 (0)475 59 12 34
@@ -175,10 +162,10 @@ function AboutPage() {
                 </div>
               </div>
               <div>
-                <div className="text-primary text-sm tracking-wider uppercase mb-2">Openingstijden</div>
+                <div className="text-primary text-sm tracking-wider uppercase mb-2">{t('footer.openingHours')}</div>
                 <div className="text-light/80">
-                  Op reservering<br />
-                  Zondag gesloten
+                  {t('footer.byReservation')}<br />
+                  {t('footer.sundayClosed')}
                 </div>
               </div>
             </div>

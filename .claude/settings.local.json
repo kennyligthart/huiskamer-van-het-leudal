@@ -8,7 +8,8 @@
       "Bash(npm install:*)",
       "Bash(npm view:*)",
       "Bash(npm run dev:*)",
-      "Skill(fix)"
+      "Skill(fix)",
+      "Bash(npm run build:*)"
     ]
   },
   "outputStyle": "Explanatory"

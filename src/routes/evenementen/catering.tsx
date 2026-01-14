@@ -8,6 +8,13 @@ export const Route = createFileRoute('/evenementen/catering')({
 function CateringPage() {
   const { t } = useTranslation()
 
+  const services = [
+    { key: 'appetizers' },
+    { key: 'hotCold' },
+    { key: 'customMenu' },
+    { key: 'fullService' },
+  ]
+
   return (
     <div className="bg-light">
       {/* Hero Section */}
@@ -26,13 +33,13 @@ function CateringPage() {
 
         <div className="container-custom relative text-center">
           <Link to="/evenementen" className="text-primary/70 hover:text-primary text-sm tracking-wider uppercase mb-4 inline-block">
-            ← Terug naar Evenementen
+            {t('common.backToEvents')}
           </Link>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-light mb-6">
             {t('events.catering')}
           </h1>
           <p className="text-light/70 max-w-2xl mx-auto">
-            Culinair genieten op uw eigen locatie
+            {t('cateringPage.heroSubtitle')}
           </p>
         </div>
       </section>
@@ -45,31 +52,29 @@ function CateringPage() {
               <div className="flex items-center justify-center gap-4 mb-6">
                 <div className="w-16 h-px bg-primary/50" />
                 <span className="text-primary text-sm tracking-[0.3em] uppercase">
-                  Catering
+                  {t('cateringPage.sectionLabel')}
                 </span>
                 <div className="w-16 h-px bg-primary/50" />
               </div>
 
               <h2 className="font-serif text-3xl md:text-4xl text-dark mb-6">
-                Wij Komen Naar U Toe
+                {t('cateringPage.title')}
               </h2>
             </div>
 
             <p className="text-dark/70 text-lg leading-relaxed mb-8 text-center">
-              Heeft u een feest of evenement op een andere locatie? Onze cateringservice
-              brengt de kwaliteit en smaak van Café Houben naar de locatie van uw keuze.
+              {t('cateringPage.description')}
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6 mb-12">
-              {[
-                { title: 'Hapjes & Buffetten', desc: 'Van borrelhapjes tot uitgebreide buffetten' },
-                { title: 'Koud & Warm', desc: 'Zowel koude als warme gerechten mogelijk' },
-                { title: 'Aangepast Menu', desc: 'We stemmen af op uw wensen en dieetwensen' },
-                { title: 'Volledige Service', desc: 'Inclusief bediening en opruimen indien gewenst' },
-              ].map((item, index) => (
-                <div key={index} className="bg-white p-6 shadow-md">
-                  <h3 className="font-serif text-lg text-dark mb-2">{item.title}</h3>
-                  <p className="text-dark/60 text-sm">{item.desc}</p>
+              {services.map((item) => (
+                <div key={item.key} className="bg-white p-6 shadow-md">
+                  <h3 className="font-serif text-lg text-dark mb-2">
+                    {t(`cateringPage.services.${item.key}.title`)}
+                  </h3>
+                  <p className="text-dark/60 text-sm">
+                    {t(`cateringPage.services.${item.key}.description`)}
+                  </p>
                 </div>
               ))}
             </div>
@@ -79,7 +84,7 @@ function CateringPage() {
                 to="/contact"
                 className="inline-block bg-primary text-dark font-medium px-8 py-4 hover:bg-primary-600 transition-colors"
               >
-                Offerte Aanvragen
+                {t('cateringPage.requestQuote')}
               </Link>
             </div>
           </div>

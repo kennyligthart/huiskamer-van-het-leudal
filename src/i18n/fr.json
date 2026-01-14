@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "hotel": "Hôtel",
+    "restaurant": "Restaurant",
+    "cafe": "Café",
+    "events": "Événements",
+    "scooterRental": "Location de scooters",
+    "contact": "Contact"
+  },
+  "events": {
+    "garden": "Jardin intérieur",
+    "catering": "Traiteur",
+    "partyHall": "Location de salle de fête",
+    "meetingRoom": "Location de salle de réunion",
+    "wedding": "Mariage",
+    "funeral": "Réception funéraire"
+  },
+  "home": {
+    "hero": {
+      "title": "Le Salon du Leudal",
+      "subtitle": "Vivez l'hospitalité et la convivialité limbourgeoises dans une atmosphère chaleureuse",
+      "since": "Depuis 1890"
+    },
+    "welcome": {
+      "title": "Bienvenue au Café Houben",
+      "description": "Depuis 1890, notre entreprise familiale est l'adresse incontournable pour l'hospitalité limbourgeoise. Que vous veniez pour un séjour à notre hôtel, un délicieux dîner à notre restaurant, une soirée conviviale à notre café, ou une occasion spéciale dans nos salles – vous êtes toujours les bienvenus."
+    },
+    "services": {
+      "title": "Nos Services",
+      "hotel": {
+        "title": "Hôtel",
+        "description": "Chambres confortables pour un séjour relaxant"
+      },
+      "restaurant": {
+        "title": "Restaurant",
+        "description": "Savourez la délicieuse cuisine limbourgeoise"
+      },
+      "cafe": {
+        "title": "Café",
+        "description": "Convivialité avec restauration et boissons"
+      },
+      "events": {
+        "title": "Événements",
+        "description": "L'endroit idéal pour votre célébration ou réunion"
+      }
+    }
+  },
+  "footer": {
+    "address": "Adresse",
+    "contact": "Contact",
+    "openingHours": "Heures d'ouverture",
+    "byReservation": "Sur réservation",
+    "sundayClosed": "Dimanche fermé",
+    "rights": "Tous droits réservés"
+  },
+  "contact": {
+    "title": "Contact",
+    "form": {
+      "name": "Nom",
+      "email": "Adresse e-mail",
+      "phone": "Numéro de téléphone",
+      "subject": "Sujet",
+      "message": "Message",
+      "send": "Envoyer",
+      "success": "Votre message a été envoyé. Nous vous contacterons dès que possible.",
+      "error": "Une erreur s'est produite. Veuillez réessayer plus tard."
+    }
+  },
+  "common": {
+    "readMore": "En savoir plus",
+    "bookNow": "Réserver maintenant",
+    "viewMenu": "Voir le menu",
+    "learnMore": "Plus d'informations"
+  }
+}

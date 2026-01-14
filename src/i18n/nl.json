@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Over ons",
+    "hotel": "Hotel",
+    "restaurant": "Restaurant",
+    "cafe": "Eetcafé",
+    "events": "Evenementen",
+    "scooterRental": "Scooterverhuur",
+    "contact": "Contact"
+  },
+  "events": {
+    "garden": "Binnentuin",
+    "catering": "Catering",
+    "partyHall": "Feestzaal huren",
+    "meetingRoom": "Vergaderzaal huren",
+    "wedding": "Bruiloft",
+    "funeral": "Koffietafel / Uitvaart"
+  },
+  "home": {
+    "hero": {
+      "title": "De Huiskamer van het Leudal",
+      "subtitle": "Beleef bij ons Limburgse gastvrijheid en gezelligheid in een huiselijke sfeer",
+      "since": "Sinds 1890"
+    },
+    "welcome": {
+      "title": "Welkom bij Café Houben",
+      "description": "Al sinds 1890 is ons familiebedrijf hét adres voor Limburgse gastvrijheid. Of u nu komt voor een overnachting in ons hotel, een heerlijk diner in ons restaurant, een gezellige avond in ons eetcafé, of een bijzondere gebeurtenis in onze zalen – bij ons bent u altijd welkom."
+    },
+    "services": {
+      "title": "Onze Diensten",
+      "hotel": {
+        "title": "Hotel",
+        "description": "Comfortabele kamers voor een ontspannen verblijf"
+      },
+      "restaurant": {
+        "title": "Restaurant",
+        "description": "Geniet van heerlijke Limburgse gerechten"
+      },
+      "cafe": {
+        "title": "Eetcafé",
+        "description": "Gezelligheid met een hapje en een drankje"
+      },
+      "events": {
+        "title": "Evenementen",
+        "description": "De perfecte locatie voor uw feest of vergadering"
+      }
+    }
+  },
+  "footer": {
+    "address": "Adres",
+    "contact": "Contact",
+    "openingHours": "Openingstijden",
+    "byReservation": "Op reservering",
+    "sundayClosed": "Zondag gesloten",
+    "rights": "Alle rechten voorbehouden"
+  },
+  "contact": {
+    "title": "Contact",
+    "form": {
+      "name": "Naam",
+      "email": "E-mailadres",
+      "phone": "Telefoonnummer",
+      "subject": "Onderwerp",
+      "message": "Bericht",
+      "send": "Verstuur",
+      "success": "Uw bericht is verzonden. We nemen zo snel mogelijk contact met u op.",
+      "error": "Er is iets misgegaan. Probeer het later opnieuw."
+    }
+  },
+  "common": {
+    "readMore": "Lees meer",
+    "bookNow": "Reserveer nu",
+    "viewMenu": "Bekijk menu",
+    "learnMore": "Meer informatie"
+  }
+}

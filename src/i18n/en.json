@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "hotel": "Hotel",
+    "restaurant": "Restaurant",
+    "cafe": "Café",
+    "events": "Events",
+    "scooterRental": "Scooter Rental",
+    "contact": "Contact"
+  },
+  "events": {
+    "garden": "Inner Garden",
+    "catering": "Catering",
+    "partyHall": "Party Hall Rental",
+    "meetingRoom": "Meeting Room Rental",
+    "wedding": "Weddings",
+    "funeral": "Funeral Reception"
+  },
+  "home": {
+    "hero": {
+      "title": "The Living Room of Leudal",
+      "subtitle": "Experience Limburgian hospitality and coziness in a homely atmosphere",
+      "since": "Since 1890"
+    },
+    "welcome": {
+      "title": "Welcome to Café Houben",
+      "description": "Since 1890, our family business has been the address for Limburgian hospitality. Whether you come for an overnight stay in our hotel, a delicious dinner in our restaurant, a cozy evening in our café, or a special occasion in our event spaces – you are always welcome."
+    },
+    "services": {
+      "title": "Our Services",
+      "hotel": {
+        "title": "Hotel",
+        "description": "Comfortable rooms for a relaxing stay"
+      },
+      "restaurant": {
+        "title": "Restaurant",
+        "description": "Enjoy delicious Limburgian cuisine"
+      },
+      "cafe": {
+        "title": "Café",
+        "description": "Coziness with food and drinks"
+      },
+      "events": {
+        "title": "Events",
+        "description": "The perfect location for your celebration or meeting"
+      }
+    }
+  },
+  "footer": {
+    "address": "Address",
+    "contact": "Contact",
+    "openingHours": "Opening Hours",
+    "byReservation": "By reservation",
+    "sundayClosed": "Sunday closed",
+    "rights": "All rights reserved"
+  },
+  "contact": {
+    "title": "Contact",
+    "form": {
+      "name": "Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send",
+      "success": "Your message has been sent. We will contact you as soon as possible.",
+      "error": "Something went wrong. Please try again later."
+    }
+  },
+  "common": {
+    "readMore": "Read More",
+    "bookNow": "Book Now",
+    "viewMenu": "View Menu",
+    "learnMore": "Learn More"
+  }
+}

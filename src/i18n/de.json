@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "hotel": "Hotel",
+    "restaurant": "Restaurant",
+    "cafe": "Café",
+    "events": "Veranstaltungen",
+    "scooterRental": "Rollervermietung",
+    "contact": "Kontakt"
+  },
+  "events": {
+    "garden": "Innengarten",
+    "catering": "Catering",
+    "partyHall": "Festsaal mieten",
+    "meetingRoom": "Konferenzraum mieten",
+    "wedding": "Hochzeit",
+    "funeral": "Trauerfeier"
+  },
+  "home": {
+    "hero": {
+      "title": "Das Wohnzimmer von Leudal",
+      "subtitle": "Erleben Sie limburgische Gastfreundschaft und Gemütlichkeit in häuslicher Atmosphäre",
+      "since": "Seit 1890"
+    },
+    "welcome": {
+      "title": "Willkommen im Café Houben",
+      "description": "Seit 1890 ist unser Familienbetrieb die Adresse für limburgische Gastfreundschaft. Ob Sie für eine Übernachtung in unserem Hotel, ein köstliches Abendessen in unserem Restaurant, einen gemütlichen Abend in unserem Café oder einen besonderen Anlass in unseren Veranstaltungsräumen kommen – bei uns sind Sie immer willkommen."
+    },
+    "services": {
+      "title": "Unsere Dienstleistungen",
+      "hotel": {
+        "title": "Hotel",
+        "description": "Komfortable Zimmer für einen entspannten Aufenthalt"
+      },
+      "restaurant": {
+        "title": "Restaurant",
+        "description": "Genießen Sie köstliche limburgische Küche"
+      },
+      "cafe": {
+        "title": "Café",
+        "description": "Gemütlichkeit mit Speisen und Getränken"
+      },
+      "events": {
+        "title": "Veranstaltungen",
+        "description": "Der perfekte Ort für Ihre Feier oder Besprechung"
+      }
+    }
+  },
+  "footer": {
+    "address": "Adresse",
+    "contact": "Kontakt",
+    "openingHours": "Öffnungszeiten",
+    "byReservation": "Nach Reservierung",
+    "sundayClosed": "Sonntag geschlossen",
+    "rights": "Alle Rechte vorbehalten"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail-Adresse",
+      "phone": "Telefonnummer",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "send": "Senden",
+      "success": "Ihre Nachricht wurde gesendet. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+      "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es später erneut."
+    }
+  },
+  "common": {
+    "readMore": "Mehr lesen",
+    "bookNow": "Jetzt buchen",
+    "viewMenu": "Speisekarte ansehen",
+    "learnMore": "Mehr erfahren"
+  }
+}

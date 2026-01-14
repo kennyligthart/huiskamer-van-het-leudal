@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-light text-dark font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 font-medium
+           hover:bg-primary-600 transition-colors duration-200
+           focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-dark text-white px-6 py-3 font-medium
+           hover:bg-dark-lighter transition-colors duration-200
+           focus:outline-none focus:ring-2 focus:ring-dark focus:ring-offset-2;
+  }
+
+  .text-gold {
+    @apply text-primary;
+  }
+
+  .bg-gold {
+    @apply bg-primary;
+  }
+}
+
+/* Rustic textures and patterns */
+@layer utilities {
+  .texture-paper {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23a37f00' fill-opacity='0.03' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #a37f00 0%, #c9a227 50%, #a37f00 100%);
+  }
+
+  .dark-gradient {
+    background: linear-gradient(180deg, #1b1b1b 0%, #2d2d2d 100%);
+  }
+}
+
+/* Custom Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes expand-right {
+  from {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  to {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+@keyframes expand-left {
+  from {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  to {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+}
+
+@keyframes scroll-dot {
+  0%, 100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(4px);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-expand-right {
+  animation: expand-right 0.8s ease-out forwards;
+  transform: scaleX(0);
+}
+
+.animate-expand-left {
+  animation: expand-left 0.8s ease-out forwards;
+  transform: scaleX(0);
+}
+
+.animate-scroll-dot {
+  animation: scroll-dot 1.5s ease-in-out infinite;
+}
+
+/* Typography Import */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');

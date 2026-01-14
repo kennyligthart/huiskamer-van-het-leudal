@@ -6,8 +6,6 @@ export const Route = createFileRoute('/')({
 })
 
 function HomePage() {
-  const { t } = useTranslation()
-
   return (
     <div className="bg-light overflow-hidden">
       {/* Hero Section */}
@@ -119,9 +117,9 @@ function HeroSection() {
             }}
           >
             <span className="block text-primary/90 text-2xl sm:text-3xl md:text-4xl mb-2 tracking-wide">
-              De Huiskamer
+              {t('home.hero.titlePart1')}
             </span>
-            <span className="italic">van het Leudal</span>
+            <span className="italic">{t('home.hero.titlePart2')}</span>
           </h1>
         </div>
 
@@ -185,6 +183,13 @@ function HeroSection() {
 function WelcomeSection() {
   const { t } = useTranslation()
 
+  const features = [
+    { icon: '🏨', key: 'hotel' },
+    { icon: '🍽️', key: 'restaurant' },
+    { icon: '☕', key: 'cafe' },
+    { icon: '🎉', key: 'events' },
+  ]
+
   return (
     <section className="relative py-24 md:py-32 bg-light overflow-hidden">
       {/* Subtle paper texture */}
@@ -218,7 +223,7 @@ function WelcomeSection() {
             <div className="absolute -bottom-6 -right-6 md:bottom-8 md:right-8 bg-dark text-light p-6 shadow-2xl">
               <div className="text-center">
                 <div className="text-5xl font-serif text-primary">130+</div>
-                <div className="text-xs tracking-[0.2em] uppercase mt-1 text-light/70">Jaar ervaring</div>
+                <div className="text-xs tracking-[0.2em] uppercase mt-1 text-light/70">{t('home.welcome.yearsExperience')}</div>
               </div>
             </div>
           </div>
@@ -229,7 +234,7 @@ function WelcomeSection() {
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-px bg-primary" />
               <span className="text-primary text-sm tracking-[0.3em] uppercase font-medium">
-                Welkom
+                {t('home.welcome.sectionLabel')}
               </span>
             </div>
 
@@ -245,18 +250,13 @@ function WelcomeSection() {
 
             {/* Features list */}
             <div className="grid sm:grid-cols-2 gap-4 mb-8">
-              {[
-                { icon: '🏨', text: 'Comfortabel Hotel' },
-                { icon: '🍽️', text: 'Heerlijk Restaurant' },
-                { icon: '☕', text: 'Gezellig Eetcafé' },
-                { icon: '🎉', text: 'Evenementenlocatie' },
-              ].map((item, index) => (
+              {features.map((item, index) => (
                 <div
                   key={index}
                   className="flex items-center gap-3 p-3 bg-white/50 border border-primary/10 hover:border-primary/30 transition-colors"
                 >
                   <span className="text-2xl">{item.icon}</span>
-                  <span className="text-dark/80 font-medium">{item.text}</span>
+                  <span className="text-dark/80 font-medium">{t(`home.welcome.features.${item.key}`)}</span>
                 </div>
               ))}
             </div>
@@ -342,7 +342,7 @@ function ServicesSection() {
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="w-16 h-px bg-gradient-to-r from-transparent to-primary/50" />
             <span className="text-primary text-sm tracking-[0.3em] uppercase">
-              Ontdek
+              {t('home.services.sectionLabel')}
             </span>
             <div className="w-16 h-px bg-gradient-to-l from-transparent to-primary/50" />
           </div>
@@ -352,7 +352,7 @@ function ServicesSection() {
           </h2>
 
           <p className="text-light/60 max-w-2xl mx-auto">
-            Vier generaties gastvrijheid onder één dak
+            {t('home.services.subtitle')}
           </p>
         </div>
 
@@ -408,31 +408,13 @@ function ServicesSection() {
    WHY CHOOSE US SECTION
    ============================================ */
 function WhyChooseUsSection() {
+  const { t } = useTranslation()
+
   const highlights = [
-    {
-      number: '01',
-      title: 'Familietraditie',
-      description: 'Al meer dan 130 jaar wordt onze gastvrijheid doorgegeven van generatie op generatie.',
-      icon: '👨‍👩‍👧‍👦',
-    },
-    {
-      number: '02',
-      title: 'Limburgse Keuken',
-      description: 'Authentieke gerechten bereid met verse, lokale ingrediënten en liefde voor het vak.',
-      icon: '🍳',
-    },
-    {
-      number: '03',
-      title: 'Unieke Locatie',
-      description: 'Gelegen in het hart van het Leudal, omgeven door de prachtige Limburgse natuur.',
-      icon: '🌿',
-    },
-    {
-      number: '04',
-      title: 'Persoonlijke Aandacht',
-      description: 'Bij ons bent u geen nummer. Wij zorgen voor een warm welkom en persoonlijke service.',
-      icon: '💝',
-    },
+    { number: '01', key: 'tradition', icon: '👨‍👩‍👧‍👦' },
+    { number: '02', key: 'cuisine', icon: '🍳' },
+    { number: '03', key: 'location', icon: '🌿' },
+    { number: '04', key: 'service', icon: '💝' },
   ]
 
   return (
@@ -444,10 +426,10 @@ function WhyChooseUsSection() {
         {/* Section header */}
         <div className="text-center mb-16">
           <span className="text-primary text-sm tracking-[0.3em] uppercase mb-4 block">
-            Waarom Kiezen
+            {t('home.whyChooseUs.sectionLabel')}
           </span>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-dark mb-4">
-            Wat Ons Bijzonder Maakt
+            {t('home.whyChooseUs.title')}
           </h2>
           <div className="flex items-center justify-center gap-2 mt-6">
             <div className="w-2 h-2 rounded-full bg-primary/30" />
@@ -472,13 +454,13 @@ function WhyChooseUsSection() {
               <div className="text-4xl mb-4">{item.icon}</div>
 
               {/* Title */}
-              <h3 className="font-serif text-xl text-dark mb-3">{item.title}</h3>
+              <h3 className="font-serif text-xl text-dark mb-3">{t(`home.whyChooseUs.items.${item.key}.title`)}</h3>
 
               {/* Divider */}
               <div className="w-12 h-0.5 bg-primary mx-auto mb-4 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
 
               {/* Description */}
-              <p className="text-dark/60 text-sm leading-relaxed">{item.description}</p>
+              <p className="text-dark/60 text-sm leading-relaxed">{t(`home.whyChooseUs.items.${item.key}.description`)}</p>
             </div>
           ))}
         </div>
@@ -523,12 +505,11 @@ function CTASection() {
         </div>
 
         <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-light mb-6">
-          Ervaar Limburgse <span className="text-primary italic">Gastvrijheid</span>
+          {t('home.cta.title')} <span className="text-primary italic">{t('home.cta.titleHighlight')}</span>
         </h2>
 
         <p className="text-light/70 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-          Wij kijken ernaar uit u te verwelkomen. Neem contact met ons op voor reserveringen,
-          vragen of om meer te weten te komen over onze diensten.
+          {t('home.cta.description')}
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -536,7 +517,7 @@ function CTASection() {
             to="/contact"
             className="group relative px-10 py-4 bg-primary text-dark font-medium tracking-wide overflow-hidden transition-all duration-300 hover:shadow-[0_0_40px_rgba(163,127,0,0.5)]"
           >
-            <span className="relative z-10">Neem Contact Op</span>
+            <span className="relative z-10">{t('home.cta.button')}</span>
             <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
           </Link>
 
@@ -554,7 +535,7 @@ function CTASection() {
         {/* Bottom decorative element */}
         <div className="mt-16 flex items-center justify-center">
           <div className="px-6 py-2 border border-primary/30 text-primary/80 text-sm tracking-[0.2em] uppercase">
-            Sinds 1890
+            {t('home.hero.since')}
           </div>
         </div>
       </div>

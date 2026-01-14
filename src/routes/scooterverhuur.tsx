@@ -26,13 +26,13 @@ function ScooterverhuurPage() {
 
         <div className="container-custom relative text-center">
           <span className="text-primary text-sm tracking-[0.3em] uppercase mb-4 block">
-            Ontdek de Omgeving
+            {t('scooterRental.sectionLabel')}
           </span>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-light mb-6">
             {t('nav.scooterRental')}
           </h1>
           <p className="text-light/70 max-w-2xl mx-auto">
-            Verken het prachtige Leudal en omstreken op een comfortabele scooter
+            {t('scooterRental.heroDescription')}
           </p>
         </div>
       </section>
@@ -45,26 +45,22 @@ function ScooterverhuurPage() {
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-px bg-primary" />
                 <span className="text-primary text-sm tracking-[0.3em] uppercase">
-                  Scooterverhuur
+                  {t('scooterRental.intro.sectionLabel')}
                 </span>
               </div>
 
               <h2 className="font-serif text-3xl md:text-4xl text-dark mb-6">
-                Ontdek Limburg op Twee Wielen
+                {t('scooterRental.intro.title')}
               </h2>
 
               <div className="w-20 h-1 bg-gradient-to-r from-primary to-primary/30 mb-8" />
 
               <p className="text-dark/70 text-lg leading-relaxed mb-6">
-                Het Leudal en de omgeving bieden prachtige routes door bossen,
-                langs kastelen en door pittoreske dorpjes. Op de scooter ervaart
-                u dit alles op een ontspannen en plezierige manier.
+                {t('scooterRental.intro.description1')}
               </p>
 
               <p className="text-dark/70 leading-relaxed mb-8">
-                Onze scooters zijn eenvoudig te bedienen en geschikt voor iedereen
-                met een rijbewijs B. Wij zorgen voor een korte instructie en
-                u kunt direct op pad!
+                {t('scooterRental.intro.description2')}
               </p>
 
               <div className="space-y-3">
@@ -72,19 +68,19 @@ function ScooterverhuurPage() {
                   <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span>Inclusief helm en instructie</span>
+                  <span>{t('scooterRental.intro.features.helmet')}</span>
                 </div>
                 <div className="flex items-center gap-3 text-dark/70">
                   <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span>Routesuggesties beschikbaar</span>
+                  <span>{t('scooterRental.intro.features.routes')}</span>
                 </div>
                 <div className="flex items-center gap-3 text-dark/70">
                   <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span>Dagverhuur en halve dag mogelijk</span>
+                  <span>{t('scooterRental.intro.features.duration')}</span>
                 </div>
               </div>
             </div>
@@ -94,7 +90,7 @@ function ScooterverhuurPage() {
               <div className="aspect-[4/3] bg-dark-lighter flex items-center justify-center">
                 <div className="text-center text-light/50">
                   <span className="text-6xl block mb-4">🛵</span>
-                  <p className="text-sm">Foto volgt binnenkort</p>
+                  <p className="text-sm">{t('common.photoComingSoon')}</p>
                 </div>
               </div>
             </div>
@@ -107,44 +103,44 @@ function ScooterverhuurPage() {
         <div className="container-custom">
           <div className="text-center mb-16">
             <span className="text-primary text-sm tracking-[0.3em] uppercase mb-4 block">
-              Praktische Info
+              {t('scooterRental.info.sectionLabel')}
             </span>
             <h2 className="font-serif text-3xl md:text-4xl text-light">
-              Wat U Moet Weten
+              {t('scooterRental.info.title')}
             </h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-dark-lighter p-8 border border-primary/10">
               <div className="text-3xl mb-4">📋</div>
-              <h3 className="font-serif text-xl text-light mb-4">Vereisten</h3>
+              <h3 className="font-serif text-xl text-light mb-4">{t('scooterRental.info.requirements.title')}</h3>
               <ul className="text-light/60 space-y-2 text-sm">
-                <li>• Minimumleeftijd: 18 jaar</li>
-                <li>• Geldig rijbewijs B</li>
-                <li>• Legitimatie verplicht</li>
-                <li>• Borg vereist</li>
+                <li>• {t('scooterRental.info.requirements.age')}</li>
+                <li>• {t('scooterRental.info.requirements.license')}</li>
+                <li>• {t('scooterRental.info.requirements.id')}</li>
+                <li>• {t('scooterRental.info.requirements.deposit')}</li>
               </ul>
             </div>
 
             <div className="bg-dark-lighter p-8 border border-primary/10">
               <div className="text-3xl mb-4">⏰</div>
-              <h3 className="font-serif text-xl text-light mb-4">Verhuurtijden</h3>
+              <h3 className="font-serif text-xl text-light mb-4">{t('scooterRental.info.times.title')}</h3>
               <ul className="text-light/60 space-y-2 text-sm">
-                <li>• Halve dag: 4 uur</li>
-                <li>• Hele dag: 8 uur</li>
-                <li>• Weekend arrangementen</li>
-                <li>• Op reservering</li>
+                <li>• {t('scooterRental.info.times.halfDay')}</li>
+                <li>• {t('scooterRental.info.times.fullDay')}</li>
+                <li>• {t('scooterRental.info.times.weekend')}</li>
+                <li>• {t('scooterRental.info.times.reservation')}</li>
               </ul>
             </div>
 
             <div className="bg-dark-lighter p-8 border border-primary/10">
               <div className="text-3xl mb-4">🗺️</div>
-              <h3 className="font-serif text-xl text-light mb-4">Routes</h3>
+              <h3 className="font-serif text-xl text-light mb-4">{t('scooterRental.info.routes.title')}</h3>
               <ul className="text-light/60 space-y-2 text-sm">
-                <li>• Leudal route</li>
-                <li>• Kastelentocht</li>
-                <li>• Maasroute</li>
-                <li>• Eigen route mogelijk</li>
+                <li>• {t('scooterRental.info.routes.leudal')}</li>
+                <li>• {t('scooterRental.info.routes.castles')}</li>
+                <li>• {t('scooterRental.info.routes.maas')}</li>
+                <li>• {t('scooterRental.info.routes.custom')}</li>
               </ul>
             </div>
           </div>
@@ -155,17 +151,16 @@ function ScooterverhuurPage() {
       <section className="py-20 md:py-28">
         <div className="container-custom text-center">
           <h2 className="font-serif text-3xl md:text-4xl text-dark mb-6">
-            Reserveer Uw Scooter
+            {t('scooterRental.cta.title')}
           </h2>
           <p className="text-dark/70 max-w-2xl mx-auto mb-8">
-            Neem contact met ons op voor beschikbaarheid en tarieven.
-            Wij adviseren om vooraf te reserveren, vooral in het hoogseizoen.
+            {t('scooterRental.cta.description')}
           </p>
           <Link
             to="/contact"
             className="inline-block bg-primary text-dark font-medium px-8 py-4 hover:bg-primary-600 transition-colors"
           >
-            Contact Opnemen
+            {t('scooterRental.cta.button')}
           </Link>
         </div>
       </section>

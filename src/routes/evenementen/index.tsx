@@ -9,42 +9,12 @@ function EvenementenPage() {
   const { t } = useTranslation()
 
   const eventTypes = [
-    {
-      title: t('events.garden'),
-      description: 'Geniet van onze sfeervolle binnentuin voor uw speciale gelegenheid.',
-      link: '/evenementen/binnentuin',
-      icon: '🌿',
-    },
-    {
-      title: t('events.catering'),
-      description: 'Laat uw evenement verzorgen door onze ervaren cateringservice.',
-      link: '/evenementen/catering',
-      icon: '🍽️',
-    },
-    {
-      title: t('events.partyHall'),
-      description: 'Onze feestzaal biedt ruimte voor grotere vieringen en feesten.',
-      link: '/evenementen/feestzaal',
-      icon: '🎉',
-    },
-    {
-      title: t('events.meetingRoom'),
-      description: 'Een professionele omgeving voor uw zakelijke bijeenkomsten.',
-      link: '/evenementen/vergaderzaal',
-      icon: '💼',
-    },
-    {
-      title: t('events.wedding'),
-      description: 'Maak van uw trouwdag een onvergetelijke gebeurtenis.',
-      link: '/evenementen/bruiloft',
-      icon: '💒',
-    },
-    {
-      title: t('events.funeral'),
-      description: 'Een waardige locatie voor afscheid en herdenking.',
-      link: '/evenementen/uitvaart',
-      icon: '🕯️',
-    },
+    { key: 'garden', link: '/evenementen/binnentuin', icon: '🌿' },
+    { key: 'catering', link: '/evenementen/catering', icon: '🍽️' },
+    { key: 'partyHall', link: '/evenementen/feestzaal', icon: '🎉' },
+    { key: 'meetingRoom', link: '/evenementen/vergaderzaal', icon: '💼' },
+    { key: 'wedding', link: '/evenementen/bruiloft', icon: '💒' },
+    { key: 'funeral', link: '/evenementen/uitvaart', icon: '🕯️' },
   ]
 
   return (
@@ -65,13 +35,13 @@ function EvenementenPage() {
 
         <div className="container-custom relative text-center">
           <span className="text-primary text-sm tracking-[0.3em] uppercase mb-4 block">
-            Uw Speciale Gelegenheid
+            {t('eventsPage.sectionLabel')}
           </span>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-light mb-6">
             {t('nav.events')}
           </h1>
           <p className="text-light/70 max-w-2xl mx-auto">
-            De perfecte locatie voor elk evenement, groot of klein
+            {t('eventsPage.heroDescription')}
           </p>
         </div>
       </section>
@@ -83,19 +53,17 @@ function EvenementenPage() {
             <div className="flex items-center justify-center gap-4 mb-6">
               <div className="w-16 h-px bg-primary/50" />
               <span className="text-primary text-sm tracking-[0.3em] uppercase">
-                Onze Zalen
+                {t('eventsPage.intro.sectionLabel')}
               </span>
               <div className="w-16 h-px bg-primary/50" />
             </div>
 
             <h2 className="font-serif text-3xl md:text-4xl text-dark mb-6">
-              Voor Elk Moment de Juiste Ruimte
+              {t('eventsPage.intro.title')}
             </h2>
 
             <p className="text-dark/70 text-lg leading-relaxed">
-              Van intieme bijeenkomsten tot grote feesten, van zakelijke vergaderingen
-              tot emotionele momenten - onze diverse ruimtes bieden voor elk evenement
-              de perfecte setting.
+              {t('eventsPage.intro.description')}
             </p>
           </div>
 
@@ -109,13 +77,13 @@ function EvenementenPage() {
               >
                 <div className="text-5xl mb-6">{event.icon}</div>
                 <h3 className="font-serif text-xl text-dark mb-3 group-hover:text-primary transition-colors">
-                  {event.title}
+                  {t(`events.${event.key}`)}
                 </h3>
                 <p className="text-dark/60 text-sm leading-relaxed mb-4">
-                  {event.description}
+                  {t(`eventsPage.types.${event.key}`)}
                 </p>
                 <div className="flex items-center text-primary text-sm font-medium">
-                  <span>Meer informatie</span>
+                  <span>{t('common.learnMore')}</span>
                   <svg
                     className="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform"
                     fill="none"
@@ -135,17 +103,16 @@ function EvenementenPage() {
       <section className="py-20 md:py-28 bg-dark">
         <div className="container-custom text-center">
           <h2 className="font-serif text-3xl md:text-4xl text-light mb-6">
-            Laat Ons Uw Evenement Verzorgen
+            {t('eventsPage.cta.title')}
           </h2>
           <p className="text-light/70 max-w-2xl mx-auto mb-8">
-            Neem vrijblijvend contact met ons op om de mogelijkheden te bespreken.
-            Samen maken we van uw evenement een succes.
+            {t('eventsPage.cta.description')}
           </p>
           <Link
             to="/contact"
             className="inline-block bg-primary text-dark font-medium px-8 py-4 hover:bg-primary-600 transition-colors"
           >
-            Contact Opnemen
+            {t('eventsPage.cta.button')}
           </Link>
         </div>
       </section>

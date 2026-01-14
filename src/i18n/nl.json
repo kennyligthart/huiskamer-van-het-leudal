@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "De Huiskamer van het Leudal | Café Houben - Sinds 1890",
+    "description": "Beleef Limburgse gastvrijheid en gezelligheid in een huiselijke sfeer. Hotel, restaurant, eetcafé en evenementenlocatie in Nunhem sinds 1890."
+  },
   "nav": {
     "home": "Home",
     "about": "Over ons",
@@ -20,15 +24,27 @@
   "home": {
     "hero": {
       "title": "De Huiskamer van het Leudal",
+      "titlePart1": "De Huiskamer",
+      "titlePart2": "van het Leudal",
       "subtitle": "Beleef bij ons Limburgse gastvrijheid en gezelligheid in een huiselijke sfeer",
       "since": "Sinds 1890"
     },
     "welcome": {
+      "sectionLabel": "Welkom",
       "title": "Welkom bij Café Houben",
-      "description": "Al sinds 1890 is ons familiebedrijf hét adres voor Limburgse gastvrijheid. Of u nu komt voor een overnachting in ons hotel, een heerlijk diner in ons restaurant, een gezellige avond in ons eetcafé, of een bijzondere gebeurtenis in onze zalen – bij ons bent u altijd welkom."
+      "description": "Al sinds 1890 is ons familiebedrijf hét adres voor Limburgse gastvrijheid. Of u nu komt voor een overnachting in ons hotel, een heerlijk diner in ons restaurant, een gezellige avond in ons eetcafé, of een bijzondere gebeurtenis in onze zalen – bij ons bent u altijd welkom.",
+      "yearsExperience": "Jaar ervaring",
+      "features": {
+        "hotel": "Comfortabel Hotel",
+        "restaurant": "Heerlijk Restaurant",
+        "cafe": "Gezellig Eetcafé",
+        "events": "Evenementenlocatie"
+      }
     },
     "services": {
+      "sectionLabel": "Ontdek",
       "title": "Onze Diensten",
+      "subtitle": "Vier generaties gastvrijheid onder één dak",
       "hotel": {
         "title": "Hotel",
         "description": "Comfortabele kamers voor een ontspannen verblijf"
@@ -45,6 +61,286 @@
         "title": "Evenementen",
         "description": "De perfecte locatie voor uw feest of vergadering"
       }
+    },
+    "whyChooseUs": {
+      "sectionLabel": "Waarom Kiezen",
+      "title": "Wat Ons Bijzonder Maakt",
+      "items": {
+        "tradition": {
+          "title": "Familietraditie",
+          "description": "Al meer dan 130 jaar wordt onze gastvrijheid doorgegeven van generatie op generatie."
+        },
+        "cuisine": {
+          "title": "Limburgse Keuken",
+          "description": "Authentieke gerechten bereid met verse, lokale ingrediënten en liefde voor het vak."
+        },
+        "location": {
+          "title": "Unieke Locatie",
+          "description": "Gelegen in het hart van het Leudal, omgeven door de prachtige Limburgse natuur."
+        },
+        "service": {
+          "title": "Persoonlijke Aandacht",
+          "description": "Bij ons bent u geen nummer. Wij zorgen voor een warm welkom en persoonlijke service."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ervaar Limburgse",
+      "titleHighlight": "Gastvrijheid",
+      "description": "Wij kijken ernaar uit u te verwelkomen. Neem contact met ons op voor reserveringen, vragen of om meer te weten te komen over onze diensten.",
+      "button": "Neem Contact Op"
+    }
+  },
+  "hotel": {
+    "sectionLabel": "Verblijf",
+    "heroDescription": "Ontspan in onze comfortabele kamers en geniet van Limburgse gastvrijheid",
+    "intro": {
+      "sectionLabel": "Ons Hotel",
+      "title": "Een Thuisgevoel op Vakantie",
+      "description1": "Ons hotel biedt u de perfecte uitvalsbasis om de prachtige omgeving van het Leudal te verkennen. Na een dag vol activiteiten of zakelijke bezigheden kunt u heerlijk tot rust komen in één van onze comfortabele kamers.",
+      "description2": "Alle kamers zijn voorzien van moderne voorzieningen en ingericht met oog voor detail. 's Ochtends wordt u verwend met een uitgebreid ontbijt, bereid met verse, lokale producten.",
+      "features": {
+        "wifi": "Gratis WiFi",
+        "breakfast": "Ontbijt inbegrepen",
+        "parking": "Parkeren"
+      }
+    },
+    "facilities": {
+      "sectionLabel": "Voorzieningen",
+      "title": "Alles Voor Uw Comfort",
+      "items": {
+        "beds": {
+          "title": "Comfortabele Bedden",
+          "description": "Heerlijk slapen op kwaliteitsbedden"
+        },
+        "bathroom": {
+          "title": "Eigen Badkamer",
+          "description": "Met douche en toiletartikelen"
+        },
+        "tv": {
+          "title": "Flatscreen TV",
+          "description": "Met diverse zenders"
+        },
+        "coffee": {
+          "title": "Koffie & Thee",
+          "description": "Gratis op de kamer"
+        }
+      }
+    },
+    "cta": {
+      "title": "Interesse in een Verblijf?",
+      "description": "Neem contact met ons op voor beschikbaarheid en tarieven. Wij helpen u graag bij het plannen van uw verblijf.",
+      "button": "Contact Opnemen"
+    }
+  },
+  "restaurant": {
+    "sectionLabel": "Culinair Genieten",
+    "heroDescription": "Proef de authentieke smaken van Limburg in een sfeervolle ambiance",
+    "intro": {
+      "sectionLabel": "Ons Restaurant",
+      "title": "Limburgse Keuken met Passie Bereid",
+      "description1": "In ons restaurant serveren wij eerlijke, smakelijke gerechten bereid met verse, lokale ingrediënten. Onze keuken combineert traditionele Limburgse recepten met een moderne touch.",
+      "description2": "Of u nu komt voor een uitgebreide lunch, een romantisch diner of een feestelijke maaltijd - onze chef-kok en zijn team staan garant voor een culinaire ervaring om te onthouden.",
+      "reserveButton": "Reserveer een tafel"
+    },
+    "specialties": {
+      "sectionLabel": "Onze Specialiteiten",
+      "title": "Proef Limburg",
+      "items": {
+        "seasonal": {
+          "title": "Seizoensgerechten",
+          "description": "Onze menukaart verandert met de seizoenen, zodat u altijd kunt genieten van de verste ingrediënten."
+        },
+        "local": {
+          "title": "Lokale Producten",
+          "description": "Wij werken samen met lokale boeren en leveranciers voor de beste kwaliteit."
+        },
+        "desserts": {
+          "title": "Huisgemaakte Desserts",
+          "description": "Sluit uw maaltijd af met een van onze heerlijke, huisgemaakte desserts."
+        }
+      }
+    },
+    "cta": {
+      "title": "Reserveer Uw Tafel",
+      "description": "Wij adviseren om vooraf te reserveren, zodat wij u de beste plek kunnen garanderen.",
+      "button": "Reserveren"
+    }
+  },
+  "cafe": {
+    "sectionLabel": "Gezelligheid",
+    "heroDescription": "Het kloppend hart van Nunhem - voor een hapje, een drankje, of gewoon gezelligheid",
+    "intro": {
+      "sectionLabel": "Ons Eetcafé",
+      "title": "De Echte Limburgse Gezelligheid",
+      "description1": "Ons eetcafé is de plek waar dorpelingen en bezoekers samenkomen. Voor een kop koffie, een verfrissend biertje, of een smakelijke snack - iedereen is welkom.",
+      "description2": "De authentieke sfeer van weleer hebben we zorgvuldig behouden. Aan de bar of aan een gezellig tafeltje - hier voelt u zich direct thuis.",
+      "features": {
+        "coffee": "Verse koffie & thee",
+        "beer": "Lokale bieren",
+        "menu": "Kleine kaart",
+        "atmosphere": "Huiselijke sfeer"
+      }
+    },
+    "menu": {
+      "sectionLabel": "Kleine Kaart",
+      "title": "Iets Lekkers Erbij?",
+      "items": {
+        "sandwiches": {
+          "title": "Broodjes",
+          "description": "Vers belegd"
+        },
+        "snacks": {
+          "title": "Snacks",
+          "description": "Klassiek & lekker"
+        },
+        "salads": {
+          "title": "Salades",
+          "description": "Vers & gezond"
+        },
+        "pastry": {
+          "title": "Gebak",
+          "description": "Huisgemaakt"
+        }
+      }
+    },
+    "cta": {
+      "title": "Tot Snel in Ons Eetcafé!",
+      "description": "Loop gerust binnen voor een gezellig moment. Voor groepen adviseren wij om even te bellen.",
+      "button": "Contact Opnemen"
+    }
+  },
+  "about": {
+    "sectionLabel": "Sinds 1890",
+    "history": {
+      "sectionLabel": "Onze Geschiedenis",
+      "title": "Een Familietraditie van Meer dan 130 Jaar",
+      "description1": "Al sinds 1890 is Café Houben het kloppend hart van Nunhem. Wat begon als een eenvoudig dorpscafé met kruidenierswinkel is uitgegroeid tot een veelzijdig horecabedrijf waar gastvrijheid centraal staat.",
+      "description2": "Vier generaties lang heeft onze familie de deuren geopend voor gasten van heinde en verre. De warmte en het persoonlijke karakter dat onze overgrootouders uitstraalden, proberen wij nog elke dag door te geven.",
+      "description3": "Vandaag de dag bieden wij u een compleet pakket: van een comfortabele hotelkamer tot een heerlijk diner, van een gezellige borrel in ons eetcafé tot de perfecte locatie voor uw feest of vergadering.",
+      "founded": "Opgericht"
+    },
+    "values": {
+      "sectionLabel": "Onze Waarden",
+      "title": "Waar Wij Voor Staan",
+      "items": {
+        "hospitality": {
+          "title": "Gastvrijheid",
+          "description": "Bij ons voelt u zich thuis. Wij ontvangen iedere gast met een warme glimlach en persoonlijke aandacht."
+        },
+        "quality": {
+          "title": "Kwaliteit",
+          "description": "Van verse ingrediënten tot een perfect opgemaakt bed - wij streven naar excellentie in alles wat we doen."
+        },
+        "tradition": {
+          "title": "Traditie",
+          "description": "Met respect voor het verleden bouwen we aan de toekomst. Onze recepten en gebruiken worden van generatie op generatie doorgegeven."
+        }
+      }
+    },
+    "location": {
+      "sectionLabel": "Onze Locatie",
+      "title": "In het Hart van het Leudal",
+      "description": "Gelegen aan de Kerkstraat in het pittoreske Nunhem, omgeven door de prachtige natuur van het Leudal."
+    }
+  },
+  "scooterRental": {
+    "sectionLabel": "Ontdek de Omgeving",
+    "heroDescription": "Verken het prachtige Leudal en omstreken op een comfortabele scooter",
+    "intro": {
+      "sectionLabel": "Scooterverhuur",
+      "title": "Ontdek Limburg op Twee Wielen",
+      "description1": "Het Leudal en de omgeving bieden prachtige routes door bossen, langs kastelen en door pittoreske dorpjes. Op de scooter ervaart u dit alles op een ontspannen en plezierige manier.",
+      "description2": "Onze scooters zijn eenvoudig te bedienen en geschikt voor iedereen met een rijbewijs B. Wij zorgen voor een korte instructie en u kunt direct op pad!",
+      "features": {
+        "helmet": "Inclusief helm en instructie",
+        "routes": "Routesuggesties beschikbaar",
+        "duration": "Dagverhuur en halve dag mogelijk"
+      }
+    },
+    "info": {
+      "sectionLabel": "Praktische Info",
+      "title": "Wat U Moet Weten",
+      "requirements": {
+        "title": "Vereisten",
+        "age": "Minimumleeftijd: 18 jaar",
+        "license": "Geldig rijbewijs B",
+        "id": "Legitimatie verplicht",
+        "deposit": "Borg vereist"
+      },
+      "times": {
+        "title": "Verhuurtijden",
+        "halfDay": "Halve dag: 4 uur",
+        "fullDay": "Hele dag: 8 uur",
+        "weekend": "Weekend arrangementen",
+        "reservation": "Op reservering"
+      },
+      "routes": {
+        "title": "Routes",
+        "leudal": "Leudal route",
+        "castles": "Kastelentocht",
+        "maas": "Maasroute",
+        "custom": "Eigen route mogelijk"
+      }
+    },
+    "cta": {
+      "title": "Reserveer Uw Scooter",
+      "description": "Neem contact met ons op voor beschikbaarheid en tarieven. Wij adviseren om vooraf te reserveren, vooral in het hoogseizoen.",
+      "button": "Contact Opnemen"
+    }
+  },
+  "eventsPage": {
+    "sectionLabel": "Uw Speciale Gelegenheid",
+    "heroDescription": "De perfecte locatie voor elk evenement, groot of klein",
+    "intro": {
+      "sectionLabel": "Onze Zalen",
+      "title": "Voor Elk Moment de Juiste Ruimte",
+      "description": "Van intieme bijeenkomsten tot grote feesten, van zakelijke vergaderingen tot emotionele momenten - onze diverse ruimtes bieden voor elk evenement de perfecte setting."
+    },
+    "types": {
+      "garden": "Geniet van onze sfeervolle binnentuin voor uw speciale gelegenheid.",
+      "catering": "Laat uw evenement verzorgen door onze ervaren cateringservice.",
+      "partyHall": "Onze feestzaal biedt ruimte voor grotere vieringen en feesten.",
+      "meetingRoom": "Een professionele omgeving voor uw zakelijke bijeenkomsten.",
+      "wedding": "Maak van uw trouwdag een onvergetelijke gebeurtenis.",
+      "funeral": "Een waardige locatie voor afscheid en herdenking."
+    },
+    "cta": {
+      "title": "Laat Ons Uw Evenement Verzorgen",
+      "description": "Neem vrijblijvend contact met ons op om de mogelijkheden te bespreken. Samen maken we van uw evenement een succes.",
+      "button": "Contact Opnemen"
+    }
+  },
+  "contact": {
+    "sectionLabel": "Neem Contact Op",
+    "heroDescription": "Heeft u vragen, wilt u reserveren of meer informatie? Wij helpen u graag verder.",
+    "title": "Contact",
+    "info": {
+      "sectionLabel": "Contactgegevens",
+      "title": "Wij Staan Voor U Klaar",
+      "phone": "Telefoon",
+      "email": "E-mail"
+    },
+    "form": {
+      "title": "Stuur ons een bericht",
+      "thankYou": "Bedankt voor uw bericht!",
+      "name": "Naam",
+      "email": "E-mailadres",
+      "phone": "Telefoonnummer",
+      "subject": "Onderwerp",
+      "message": "Bericht",
+      "send": "Verstuur",
+      "sending": "Verzenden...",
+      "success": "Uw bericht is verzonden. We nemen zo snel mogelijk contact met u op.",
+      "error": "Er is iets misgegaan. Probeer het later opnieuw.",
+      "subjects": {
+        "select": "Selecteer onderwerp",
+        "hotel": "Hotel reservering",
+        "restaurant": "Restaurant reservering",
+        "events": "Evenementen / Feesten",
+        "catering": "Catering",
+        "other": "Overig"
+      }
     }
   },
   "footer": {
@@ -55,23 +351,158 @@
     "sundayClosed": "Zondag gesloten",
     "rights": "Alle rechten voorbehouden"
   },
-  "contact": {
-    "title": "Contact",
-    "form": {
-      "name": "Naam",
-      "email": "E-mailadres",
-      "phone": "Telefoonnummer",
-      "subject": "Onderwerp",
-      "message": "Bericht",
-      "send": "Verstuur",
-      "success": "Uw bericht is verzonden. We nemen zo snel mogelijk contact met u op.",
-      "error": "Er is iets misgegaan. Probeer het later opnieuw."
-    }
-  },
   "common": {
     "readMore": "Lees meer",
     "bookNow": "Reserveer nu",
     "viewMenu": "Bekijk menu",
-    "learnMore": "Meer informatie"
+    "learnMore": "Meer informatie",
+    "photoComingSoon": "Foto volgt binnenkort",
+    "backToEvents": "← Terug naar Evenementen",
+    "requestInfo": "Informatie Aanvragen",
+    "scheduleConsultation": "Plan een Gesprek",
+    "contactUs": "Contact Opnemen"
+  },
+  "weddingPage": {
+    "heroSubtitle": "Maak van uw trouwdag een onvergetelijk moment",
+    "sectionLabel": "Trouwen",
+    "title": "Uw Droombruiloft Begint Hier",
+    "description1": "Uw trouwdag is een van de belangrijkste dagen van uw leven. Wij zorgen ervoor dat alles perfect is, zodat u en uw gasten onbezorgd kunnen genieten van deze bijzondere dag.",
+    "description2": "Van een intieme ceremonie tot een groots feest - wij hebben de ervaring en de faciliteiten om uw wensen waar te maken. Samen stellen we een programma samen dat past bij jullie.",
+    "features": {
+      "reception": "Receptie en diner",
+      "partyHall": "Feestzaal voor het avondfeest",
+      "garden": "Binnentuin voor foto's",
+      "accommodation": "Overnachting voor bruidspaar"
+    },
+    "services": {
+      "sectionLabel": "Wat Wij Bieden",
+      "title": "Alles Voor Uw Grote Dag",
+      "items": {
+        "reception": {
+          "title": "Receptie",
+          "description": "Welkom voor uw gasten"
+        },
+        "dinner": {
+          "title": "Diner",
+          "description": "Culinair hoogtepunt"
+        },
+        "party": {
+          "title": "Feest",
+          "description": "Dansen tot in de nacht"
+        },
+        "stay": {
+          "title": "Verblijf",
+          "description": "Romantische overnachting"
+        }
+      }
+    }
+  },
+  "funeralPage": {
+    "heroSubtitle": "Een waardige plek voor afscheid en herdenking",
+    "sectionLabel": "Koffietafel",
+    "title": "Samen Herdenken in een Warme Omgeving",
+    "description1": "Het afscheid nemen van een dierbare is een emotioneel moment. Wij bieden een rustgevende omgeving waar familie en vrienden samen kunnen komen om te herdenken en herinneringen te delen.",
+    "description2": "Onze ervaren medewerkers zorgen met respect en discretie voor een waardig ontvangst. U kunt zich volledig richten op het samenzijn met uw naasten.",
+    "services": {
+      "coffee": {
+        "title": "Koffie & Thee",
+        "description": "Onbeperkt koffie, thee en fris"
+      },
+      "coffeeTable": {
+        "title": "Koffietafel",
+        "description": "Traditionele koffietafel met broodjes"
+      },
+      "warmMeal": {
+        "title": "Warme Maaltijd",
+        "description": "Mogelijkheid voor een warme maaltijd"
+      },
+      "flexibleRoom": {
+        "title": "Flexibele Ruimte",
+        "description": "Aangepast aan uw gezelschap"
+      }
+    },
+    "closingText": "Wij begrijpen dat dit een moeilijke tijd is. Neem gerust contact met ons op om de mogelijkheden te bespreken. Wij denken graag met u mee."
+  },
+  "gardenPage": {
+    "heroSubtitle": "Een oase van rust voor uw speciale momenten",
+    "sectionLabel": "Binnentuin",
+    "title": "Een Groene Oase in het Hart van Nunhem",
+    "description1": "Onze prachtige binnentuin biedt een unieke setting voor uw evenement. Omgeven door groen en beschut tegen de wind, is dit de perfecte locatie voor een zomerse receptie, borrel of diner.",
+    "description2": "De tuin kan zowel overdag als 's avonds gebruikt worden en wordt bij donker sfeervolle verlicht. Ideaal voor zowel formele als informele gelegenheden.",
+    "features": {
+      "capacity": "Geschikt voor 20-60 personen",
+      "lighting": "Sfeervolle verlichting",
+      "catering": "Catering mogelijk"
+    }
+  },
+  "partyHallPage": {
+    "heroSubtitle": "De ideale ruimte voor uw feest of viering",
+    "sectionLabel": "Feestzaal",
+    "title": "Ruimte voor Grotere Vieringen",
+    "description1": "Onze feestzaal is de perfecte locatie voor verjaardagen, jubilea, communies en andere feestelijke gelegenheden. De zaal biedt ruimte voor grotere gezelschappen.",
+    "description2": "Wij verzorgen alles voor u: van een sfeervolle aankleding tot heerlijke catering. U hoeft zich nergens zorgen over te maken en kunt volledig genieten van uw feest.",
+    "features": {
+      "capacity": "Capaciteit tot 100 personen",
+      "bar": "Eigen bar",
+      "sound": "Geluidsinstallatie aanwezig",
+      "parking": "Ruime parkeergelegenheid"
+    }
+  },
+  "meetingRoomPage": {
+    "heroSubtitle": "Een inspirerende omgeving voor uw zakelijke bijeenkomst",
+    "sectionLabel": "Vergaderzaal",
+    "title": "Vergaderen in een Unieke Setting",
+    "description1": "Bent u op zoek naar een inspirerende locatie voor uw vergadering, training of workshop? Onze vergaderzaal biedt alle faciliteiten die u nodig heeft, in een rustgevende omgeving.",
+    "description2": "Ver weg van de dagelijkse kantooromgeving kunnen uw deelnemers zich volledig focussen. Uiteraard verzorgen wij de catering, van koffie en thee tot een complete lunch.",
+    "features": {
+      "capacity": "Geschikt voor 10-30 personen",
+      "equipment": "Beamer en flipover aanwezig",
+      "wifi": "Gratis WiFi",
+      "setup": "Diverse opstellingen mogelijk"
+    },
+    "packages": {
+      "sectionLabel": "Arrangementen",
+      "title": "Vergaderarrangementen",
+      "items": {
+        "halfDay": {
+          "title": "Halve Dag",
+          "description": "Ochtend of middag vergadering inclusief koffie/thee en lunch"
+        },
+        "fullDay": {
+          "title": "Hele Dag",
+          "description": "Volledige dag inclusief alle consumpties en lunch"
+        },
+        "custom": {
+          "title": "Op Maat",
+          "description": "Arrangement geheel naar uw wensen samengesteld"
+        }
+      }
+    },
+    "requestQuote": "Offerte Aanvragen"
+  },
+  "cateringPage": {
+    "heroSubtitle": "Culinair genieten op uw eigen locatie",
+    "sectionLabel": "Catering",
+    "title": "Wij Komen Naar U Toe",
+    "description": "Heeft u een feest of evenement op een andere locatie? Onze cateringservice brengt de kwaliteit en smaak van Café Houben naar de locatie van uw keuze.",
+    "services": {
+      "appetizers": {
+        "title": "Hapjes & Buffetten",
+        "description": "Van borrelhapjes tot uitgebreide buffetten"
+      },
+      "hotCold": {
+        "title": "Koud & Warm",
+        "description": "Zowel koude als warme gerechten mogelijk"
+      },
+      "customMenu": {
+        "title": "Aangepast Menu",
+        "description": "We stemmen af op uw wensen en dieetwensen"
+      },
+      "fullService": {
+        "title": "Volledige Service",
+        "description": "Inclusief bediening en opruimen indien gewenst"
+      }
+    },
+    "requestQuote": "Offerte Aanvragen"
   }
 }

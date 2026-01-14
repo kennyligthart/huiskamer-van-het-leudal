@@ -8,6 +8,12 @@ export const Route = createFileRoute('/restaurant')({
 function RestaurantPage() {
   const { t } = useTranslation()
 
+  const specialties = [
+    { icon: '🍂', key: 'seasonal' },
+    { icon: '🌾', key: 'local' },
+    { icon: '🍰', key: 'desserts' },
+  ]
+
   return (
     <div className="bg-light">
       {/* Hero Section */}
@@ -26,13 +32,13 @@ function RestaurantPage() {
 
         <div className="container-custom relative text-center">
           <span className="text-primary text-sm tracking-[0.3em] uppercase mb-4 block">
-            Culinair Genieten
+            {t('restaurant.sectionLabel')}
           </span>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-light mb-6">
             {t('nav.restaurant')}
           </h1>
           <p className="text-light/70 max-w-2xl mx-auto">
-            Proef de authentieke smaken van Limburg in een sfeervolle ambiance
+            {t('restaurant.heroDescription')}
           </p>
         </div>
       </section>
@@ -48,7 +54,7 @@ function RestaurantPage() {
                   <svg className="w-16 h-16 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
-                  <p className="text-sm">Foto volgt binnenkort</p>
+                  <p className="text-sm">{t('common.photoComingSoon')}</p>
                 </div>
               </div>
             </div>
@@ -57,33 +63,29 @@ function RestaurantPage() {
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-px bg-primary" />
                 <span className="text-primary text-sm tracking-[0.3em] uppercase">
-                  Ons Restaurant
+                  {t('restaurant.intro.sectionLabel')}
                 </span>
               </div>
 
               <h2 className="font-serif text-3xl md:text-4xl text-dark mb-6">
-                Limburgse Keuken met Passie Bereid
+                {t('restaurant.intro.title')}
               </h2>
 
               <div className="w-20 h-1 bg-gradient-to-r from-primary to-primary/30 mb-8" />
 
               <p className="text-dark/70 text-lg leading-relaxed mb-6">
-                In ons restaurant serveren wij eerlijke, smakelijke gerechten bereid met
-                verse, lokale ingrediënten. Onze keuken combineert traditionele Limburgse
-                recepten met een moderne touch.
+                {t('restaurant.intro.description1')}
               </p>
 
               <p className="text-dark/70 leading-relaxed mb-8">
-                Of u nu komt voor een uitgebreide lunch, een romantisch diner of een
-                feestelijke maaltijd - onze chef-kok en zijn team staan garant voor
-                een culinaire ervaring om te onthouden.
+                {t('restaurant.intro.description2')}
               </p>
 
               <Link
                 to="/contact"
                 className="inline-flex items-center gap-2 text-primary font-medium hover:gap-4 transition-all duration-300"
               >
-                <span>Reserveer een tafel</span>
+                <span>{t('restaurant.intro.reserveButton')}</span>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -98,38 +100,26 @@ function RestaurantPage() {
         <div className="container-custom">
           <div className="text-center mb-16">
             <span className="text-primary text-sm tracking-[0.3em] uppercase mb-4 block">
-              Onze Specialiteiten
+              {t('restaurant.specialties.sectionLabel')}
             </span>
             <h2 className="font-serif text-3xl md:text-4xl text-light">
-              Proef Limburg
+              {t('restaurant.specialties.title')}
             </h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: 'Seizoensgerechten',
-                description: 'Onze menukaart verandert met de seizoenen, zodat u altijd kunt genieten van de verste ingrediënten.',
-                icon: '🍂',
-              },
-              {
-                title: 'Lokale Producten',
-                description: 'Wij werken samen met lokale boeren en leveranciers voor de beste kwaliteit.',
-                icon: '🌾',
-              },
-              {
-                title: 'Huisgemaakte Desserts',
-                description: 'Sluit uw maaltijd af met een van onze heerlijke, huisgemaakte desserts.',
-                icon: '🍰',
-              },
-            ].map((item, index) => (
+            {specialties.map((item, index) => (
               <div
                 key={index}
                 className="bg-dark-lighter p-8 border border-primary/10 hover:border-primary/30 transition-colors"
               >
                 <div className="text-5xl mb-6">{item.icon}</div>
-                <h3 className="font-serif text-xl text-light mb-4">{item.title}</h3>
-                <p className="text-light/60 leading-relaxed">{item.description}</p>
+                <h3 className="font-serif text-xl text-light mb-4">
+                  {t(`restaurant.specialties.items.${item.key}.title`)}
+                </h3>
+                <p className="text-light/60 leading-relaxed">
+                  {t(`restaurant.specialties.items.${item.key}.description`)}
+                </p>
               </div>
             ))}
           </div>
@@ -140,17 +130,17 @@ function RestaurantPage() {
       <section className="py-20 md:py-28">
         <div className="container-custom text-center">
           <h2 className="font-serif text-3xl md:text-4xl text-dark mb-6">
-            Reserveer Uw Tafel
+            {t('restaurant.cta.title')}
           </h2>
           <p className="text-dark/70 max-w-2xl mx-auto mb-8">
-            Wij adviseren om vooraf te reserveren, zodat wij u de beste plek kunnen garanderen.
+            {t('restaurant.cta.description')}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               to="/contact"
               className="inline-block bg-primary text-dark font-medium px-8 py-4 hover:bg-primary-600 transition-colors"
             >
-              Reserveren
+              {t('restaurant.cta.button')}
             </Link>
             <a
               href="tel:+31475591234"

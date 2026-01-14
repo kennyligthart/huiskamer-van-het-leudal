@@ -6,6 +6,7 @@ import {
   createRootRoute,
 } from '@tanstack/react-router'
 import * as React from 'react'
+import { useTranslation } from 'react-i18next'
 import { Navigation } from '~/components/Navigation'
 import { Footer } from '~/components/Footer'
 import globalsCss from '~/styles/globals.css?url'
@@ -22,13 +23,6 @@ export const Route = createRootRoute({
       {
         name: 'viewport',
         content: 'width=device-width, initial-scale=1',
-      },
-      {
-        title: 'De Huiskamer van het Leudal | Café Houben - Sinds 1890',
-      },
-      {
-        name: 'description',
-        content: 'Beleef Limburgse gastvrijheid en gezelligheid in een huiselijke sfeer. Hotel, restaurant, eetcafé en evenementenlocatie in Nunhem sinds 1890.',
       },
     ],
     links: [
@@ -49,6 +43,13 @@ export const Route = createRootRoute({
 })
 
 function RootComponent() {
+  const { t } = useTranslation()
+
+  // Update document title dynamically
+  React.useEffect(() => {
+    document.title = t('meta.title')
+  }, [t])
+
   return (
     <RootDocument>
       <Navigation />
@@ -61,8 +62,10 @@ function RootComponent() {
 }
 
 function RootDocument({ children }: { children: React.ReactNode }) {
+  const { i18n } = useTranslation()
+
   return (
-    <html lang="nl">
+    <html lang={i18n.language}>
       <head>
         <HeadContent />
       </head>

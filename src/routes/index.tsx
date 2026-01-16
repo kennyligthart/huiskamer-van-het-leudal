@@ -6,28 +6,24 @@ export const Route = createFileRoute('/')({
   component: HomePage,
 })
 
-// Change this to test different divider styles:
-// 'wave' | 'angle' | 'ornament' | 'overlap' | 'gradient' | 'arc' | 'zigzag' | 'dots' | 'brush' | 'peaks' | 'scallop' | 'artdeco' | 'vine' | 'doubleline' | 'torn'
-const DIVIDER_VARIANT = 'vine' as const
-
 function HomePage() {
   return (
     <div className="bg-light overflow-hidden">
       {/* Hero Section */}
       <HeroSection />
-      <SectionDivider from="dark" to="light" variant={DIVIDER_VARIANT} />
+      <SectionDivider from="dark" to="light" />
 
       {/* Welcome Section */}
       <WelcomeSection />
-      <SectionDivider from="light" to="dark" variant={DIVIDER_VARIANT} />
+      <SectionDivider from="light" to="dark" />
 
       {/* Services Section */}
       <ServicesSection />
-      <SectionDivider from="dark" to="light" variant={DIVIDER_VARIANT} />
+      <SectionDivider from="dark" to="light" />
 
       {/* Why Choose Us */}
       <WhyChooseUsSection />
-      <SectionDivider from="light" to="dark" variant={DIVIDER_VARIANT} />
+      <SectionDivider from="light" to="dark" />
 
       {/* Call to Action */}
       <CTASection />

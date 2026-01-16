@@ -1,6 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
+import { SectionDivider } from '~/components/SectionDivider'
 
 export const Route = createFileRoute('/contact')({
   component: ContactPage,
@@ -56,6 +57,8 @@ function ContactPage() {
           </p>
         </div>
       </section>
+
+      <SectionDivider from="dark" to="light" />
 
       {/* Contact Section */}
       <section className="py-20 md:py-28">

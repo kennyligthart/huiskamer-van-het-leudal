@@ -9,6 +9,7 @@ dist/
 
 # TanStack
 .tanstack/
+src/routeTree.gen.ts
 
 # Environment files
 .env
@@ -36,3 +37,6 @@ npm-debug.log*
 # Temp files
 *.tmp
 *.temp
+
+# Claude Code
+.claude/settings.local.json

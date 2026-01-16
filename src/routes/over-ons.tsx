@@ -1,5 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
+import { SectionDivider } from '~/components/SectionDivider'
 
 export const Route = createFileRoute('/over-ons')({
   component: AboutPage,
@@ -46,6 +47,8 @@ function AboutPage() {
           </div>
         </div>
       </section>
+
+      <SectionDivider from="dark" to="light" />
 
       {/* History Section */}
       <section className="py-20 md:py-28">
@@ -94,6 +97,8 @@ function AboutPage() {
         </div>
       </section>
 
+      <SectionDivider from="light" to="dark" />
+
       {/* Values Section */}
       <section className="py-20 md:py-28 bg-dark">
         <div className="container-custom">
@@ -124,6 +129,8 @@ function AboutPage() {
           </div>
         </div>
       </section>
+
+      <SectionDivider from="dark" to="light" />
 
       {/* Location Section */}
       <section className="py-20 md:py-28">

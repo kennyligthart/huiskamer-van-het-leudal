@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
+import { SectionDivider } from '~/components/SectionDivider'
 
 export const Route = createFileRoute('/evenementen/uitvaart')({
   component: UitvaartPage,
@@ -43,6 +44,8 @@ function UitvaartPage() {
           </p>
         </div>
       </section>
+
+      <SectionDivider from="dark" to="light" />
 
       {/* Content */}
       <section className="py-20 md:py-28">

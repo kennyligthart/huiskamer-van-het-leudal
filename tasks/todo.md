@@ -61,3 +61,4 @@
 - [x] Language switching functionality
 - [x] Final Vercel deployment
 - [ ] Domain configuration
+
